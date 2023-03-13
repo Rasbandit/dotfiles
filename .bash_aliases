@@ -13,7 +13,6 @@ alias e='echo'
 # Dotfiles repo
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 
-
 # Alias function
 function cjq() {
  cat "$1" | jq
