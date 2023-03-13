@@ -42,5 +42,3 @@ function create_test_script() {
     echo '#!/bin/bash' >> ./test.sh
 }
 alias cts="create_test_script"
-
-# Do I get added?
