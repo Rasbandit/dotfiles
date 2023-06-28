@@ -45,14 +45,12 @@ function create_test_script() {
 alias cts="create_test_script"
 
 function docker_build_deploy() {
-    set -ex
-
     local TAG=${1}
     local IMAGE_NAME=${2:-IMAGE_NAME}
     local REGISTRY_URL=${3:-REGISTRY_URL}
 
     docker build . -t ${IMAGE_NAME}:${TAG}
     docker tag ${IMAGE_NAME}:${TAG} ${REGISTRY_URL}:${TAG}
-    docker push ${REGISTRY_URL}:${NUMBER}
+    docker push ${REGISTRY_URL}:${TAG}
 }
 alias dbd="docker_build_deploy"
