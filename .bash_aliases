@@ -45,9 +45,9 @@ function create_test_script() {
 alias cts="create_test_script"
 
 function docker_build_deploy() {
-    local TAG=${1}
+    local REGISTRY_URL=${1:-REGISTRY_URL}
     local IMAGE_NAME=${2:-IMAGE_NAME}
-    local REGISTRY_URL=${3:-REGISTRY_URL}
+    local TAG=${3}
 
     docker build . -t ${IMAGE_NAME}:${TAG}
     docker tag ${IMAGE_NAME}:${TAG} ${REGISTRY_URL}:${TAG}
