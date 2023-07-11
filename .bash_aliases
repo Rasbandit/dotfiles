@@ -3,8 +3,8 @@ alias ll='ls -AlF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ldir='ls -d */'
-alias cdg='cd ~/Documents/gala'
 alias sctl='systemctl'
+alias edit_aliases='code ~/.bash_aliases'
 
 # Kubernetes
 alias k='kubectl'
