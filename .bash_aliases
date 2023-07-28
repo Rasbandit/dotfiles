@@ -45,12 +45,14 @@ function create_test_script() {
 alias cts="create_test_script"
 
 function docker_build_publish() {
-    local REGISTRY_URL=${1:-REGISTRY_URL}
-    local IMAGE_NAME=${2:-IMAGE_NAME}
+    local REGISTRY_URL=${1}
+    local IMAGE_NAME=${2}
     local TAG=${3}
+    local DOCKER_FILE=${4:-"Dockerfile"}
 
-    docker build . -t ${IMAGE_NAME}:${TAG}
+    docker build . -f ${DOCKER_FILE} -t ${IMAGE_NAME}:${TAG}
     docker tag ${IMAGE_NAME}:${TAG} ${REGISTRY_URL}:${TAG}
     docker push ${REGISTRY_URL}:${TAG}
 }
 alias dbp="docker_build_publish"
+
