@@ -5,6 +5,7 @@ alias l='ls -CF'
 alias ldir='ls -d */'
 alias sctl='systemctl'
 alias edit_aliases='code ~/.bash_aliases'
+alias edit_setup='code ~/dotfiles/setup-install.sh'
 
 # Kubernetes
 alias k='kubectl'
@@ -28,8 +29,6 @@ alias fuck='git reset --soft HEAD^'
 alias extip='curl icanhazip.com'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
 alias sbrc='source ~/.bashrc'
-alias mem5='ps auxf | sort -nr -k 4 | head -5'
-alias cpu5='ps auxf | sort -nr -k 3 | head -5'
 
 # Apt
 alias i='sudo apt install'
