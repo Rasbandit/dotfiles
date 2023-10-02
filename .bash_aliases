@@ -55,3 +55,9 @@ function docker_build_publish() {
 }
 alias dbp="docker_build_publish"
 
+# Nord
+
+alias nrd='nordvpn'
+alias nrdct='nordvpn connect Tokyo'
+alias nrdd='nordvpn disconnect'
+alias nrds='nordvpn status'
