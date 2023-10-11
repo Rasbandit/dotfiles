@@ -58,6 +58,7 @@ alias dbp="docker_build_publish"
 # Nord
 
 alias nrd='nordvpn'
+alias nrdc='nordvpn connect'
 alias nrdct='nordvpn connect Tokyo'
 alias nrdd='nordvpn disconnect'
 alias nrds='nordvpn status'
