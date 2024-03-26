@@ -9,4 +9,5 @@ jq \
 yq \
 vlc
 
-sudo snap install discord
+sudo snap install discord todoist
+sudo snap set core experimental.refresh-app-awareness=true
