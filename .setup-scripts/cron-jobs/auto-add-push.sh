@@ -6,7 +6,7 @@ function config() {
 
 config pull
 
-config add /home/rasbandit/.setup-scripts/**/*
+config add /home/rasbandit/.setup-scripts/*
 
 config add -u
 
