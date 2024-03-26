@@ -17,3 +17,5 @@ fi;
 
 config checkout
 config config status.showUntrackedFiles no
+
+$HOME/.setup_scripts/install.sh
