@@ -1,8 +1,8 @@
 # Pulling instructions
 
-follow this for now. Will update later
-
-https://www.atlassian.com/git/tutorials/dotfiles
+```sh
+curl -sL https://bit.ly/bandit-dotfiles-init | /bin/bash
+```
 
 # Dracula Pro Download Location
 

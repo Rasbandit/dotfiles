@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function config() {
-    /usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=/home/rasbandit $@
+    /usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=/home/rasbandit "$@"
 }
 
 config pull
@@ -16,7 +16,7 @@ if [ -n "$(config diff --cached --name-only)" ]; then
     timestamp=$(date +"%Y-%m-%d %H:%M")
 
     # Commit the changes with the specified commit message including the timestamp
-    /usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=/home/rasbandit commit -m "$timestamp"
+    config commit -m "$timestamp"
     # Push the committed changes to the remote repository
     config push
 else
