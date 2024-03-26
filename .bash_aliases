@@ -5,7 +5,16 @@ alias l='ls -CF'
 alias ldir='ls -d */'
 alias sctl='systemctl'
 alias edit_aliases='code ~/.bash_aliases'
-alias edit_setup='code ~/dotfiles/setup-install.sh'
+alias ..='cd ..'
+alias c="clear"
+alias rm='rm -I --preserve-root'
+
+# Grep
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+
 
 # Kubernetes
 alias k='kubectl'
@@ -13,6 +22,7 @@ alias e='echo'
 
 # Dotfiles repo
 alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
+alias edit_setup='code ~/.cfg'
 
 # Alias function
 function cjq() {
@@ -24,6 +34,9 @@ alias npmr='rm -rf node_modules package-lock.json; npm i'
 
 # git
 alias fuck='git reset --soft HEAD^'
+
+# bash
+alias please='sudo $(history -p !!)'
 
 # Utils
 alias extip='curl icanhazip.com'
