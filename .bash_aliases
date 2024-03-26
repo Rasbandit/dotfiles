@@ -12,7 +12,7 @@ alias k='kubectl'
 alias e='echo'
 
 # Dotfiles repo
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
 
 # Alias function
 function cjq() {
@@ -35,13 +35,15 @@ alias i='sudo apt install'
 alias upd='sudo apt update'
 alias upg='upd && sudo apt upgrade'
 
-function create_test_script() {
-    touch ./test.sh
-    chmod +x ./test.sh
-    echo '#!/bin/bash' >> ./test.sh
-    code ./test.sh
+function create_script() {
+    local SCRIPT_NAME=${1:-"test"}
+
+    touch ./${SCRIPT_NAME}.sh
+    chmod +x ./${SCRIPT_NAME}.sh
+    echo '#!/bin/bash' >> ./${SCRIPT_NAME}.sh
+    code ./${SCRIPT_NAME}.sh
 }
-alias cts="create_test_script"
+alias cs="create_script"
 
 function docker_build_publish() {
     local REGISTRY_URL=${1}

@@ -119,10 +119,14 @@ if ! shopt -oq posix; then
     fi
 fi
 
-export PATH=$PATH:$HOME/.istioctl/bin
-export PATH=$PATH:/home/rasbandit/.linkerd2/bin
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-export BUN_INSTALL="$HOME/.bun"
+USRMODMAP="$HOME/.Xmodmap"
+
+if [ -x /usr/bin/xmodmap ]; then
+        if [ -f "$USRMODMAP" ]; then
+                /usr/bin/xmodmap "$USRMODMAP" || true
+        fi
+fi
+
 export PATH="$BUN_INSTALL/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
