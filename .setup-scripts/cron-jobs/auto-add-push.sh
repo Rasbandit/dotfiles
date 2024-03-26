@@ -1,12 +1,12 @@
 #!/bin/bash
 
 function config() {
-    /usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=/home/rasbandit "$@"
+    /usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME "$@"
 }
 
 config pull
 
-config add /home/rasbandit/.setup-scripts/*
+config add $HOME/.setup-scripts/*
 
 config add -u
 
