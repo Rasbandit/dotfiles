@@ -10,7 +10,7 @@ if [ -n "$(/usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=$HOME diff --
     timestamp=$(date +"%Y-%m-%d %H:%M")
 
     # Commit the changes with the specified commit message including the timestamp
-    /usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=$HOME commit -m "Commit message - $timestamp"
+    /usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=$HOME commit -m "$timestamp"
     # Push the committed changes to the remote repository
     /usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=$HOME push
 else
