@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Add changes to tracked files to the staging area
+/usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=/home/rasbandit pull
 
 /usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=/home/rasbandit add -u
 
