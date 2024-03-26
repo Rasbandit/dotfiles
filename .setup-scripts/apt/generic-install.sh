@@ -11,6 +11,7 @@ jq \
 yq \
 vlc
 
+sudo snap refresh
 sudo snap install discord todoist
 sudo snap set core experimental.refresh-app-awareness=true
 
@@ -19,3 +20,11 @@ sudo snap set core experimental.refresh-app-awareness=true
 ## nord
 ## Wireguard
 ## droidcam
+## terraform
+## helm
+## tailscale
+## steam
+
+## Nvidia drivers?
+## wine/proton?
+## Readme
