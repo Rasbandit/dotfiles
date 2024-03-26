@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -ex
-
 function config() {
     /usr/bin/git --git-dir=/home/rasbandit/.cfg --work-tree=/home/rasbandit $@
 }
