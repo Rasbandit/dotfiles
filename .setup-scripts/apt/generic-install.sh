@@ -9,7 +9,8 @@ curl \
 default-jdk \
 jq \
 yq \
-vlc
+vlc \
+pavucontrol
 
 sudo snap refresh
 sudo snap install discord todoist
