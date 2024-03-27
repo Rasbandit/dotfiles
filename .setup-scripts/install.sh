@@ -1,5 +1,6 @@
 #!/bin/bash
 
+touch ~/.bash_secrets
 
 # Check if the distribution is Ubuntu
 if [ "$(lsb_release -si)" = "Ubuntu" ]; then
