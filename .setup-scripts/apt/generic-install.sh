@@ -18,7 +18,6 @@ sudo snap set core experimental.refresh-app-awareness=true
 ~/.setup-scripts/other-installs/nordvpn.sh
 
 ## INSOMNIA/postman
-## nord
 ## Wireguard
 ## droidcam
 ## terraform
