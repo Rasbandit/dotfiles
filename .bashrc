@@ -104,8 +104,8 @@ if [ -f ~/.bash_secrets ]; then
     . ~/.bash_secrets
 fi
 
-if [ -f ~/.bash_gala ]; then
-    . ~/.bash_gala
+if [ -f ~/.bash_work ]; then
+    . ~/.bash_work
 fi
 
 # enable programmable completion features (you don't need to enable

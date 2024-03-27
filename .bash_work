@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias work_edit="code ~/.bash_work"
+alias edit_work="code ~/.bash_work"
 
 function cd_work() {
     mkdir -p ~/Documents/work
