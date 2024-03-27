@@ -24,23 +24,20 @@ add_or_update_env() {
         return
     fi
 
-    # Check if the variable already exists
-    if grep -q "^export $key=" "$HOME/.bash_secrets"; then
-        # Update the existing variable
-        sed -i "s|^export $key=.*|export $key=\"$value\"|g" "$HOME/.bash_secrets"
-    else
-        # Add a new variable
-        echo -e "export $key=\"$value\"" >> "$HOME/.bash_secrets"
-    fi
+    # Create or update environment variable in the specific file
+    echo "export $key=\"$value\"" >> "$HOME/.bash_secrets_$item_name"
 }
 
 # Parse JSON and loop over fields
 fields=$(echo "$input_json" | jq -c '.fields[]')
+
+# Create a new .bash_secrets file for the current item
+echo "# Environment variables for $item_name" > "$HOME/.bash_secrets_$item_name"
 
 # Iterate over fields
 while IFS= read -r field; do
     add_or_update_env "$field"
 done <<< "$fields"
 
-# Source the file to apply changes immediately
-source "$HOME/.bash_secrets"
+# Append sourcing of the newly created .bash_secrets file to the main .bash_secrets file
+echo "source \"$HOME/.bash_secrets_$item_name\"" >> "$HOME/.bash_secrets"
