@@ -14,11 +14,12 @@ input_json=$(op item get "$item_name" --vault "$vault_name" --format json)
 
 # Function to add or update environment variables
 add_or_update_env() {
-    local key=$1
-    local value=$2
+    local object=$1
+    local key=$(jq -r '.label' <<< "$object")
+    local value=$(jq -r '.value' <<< "$object")
 
-    # Check if the value is empty
-    if [[ -z $value ]]; then
+    # Check if the value is null or empty
+    if [[ $value == "null" || -z $value ]]; then
         echo "Skipping $key because the value is empty"
         return
     fi
@@ -29,18 +30,17 @@ add_or_update_env() {
         sed -i "s|^export $key=.*|export $key=\"$value\"|g" "$HOME/.bash_secrets"
     else
         # Add a new variable
-        echo "export $key=\"$value\"" >> "$HOME/.bash_secrets"
+        echo -e "export $key=\"$value\"" >> "$HOME/.bash_secrets"
     fi
 }
 
 # Parse JSON and loop over fields
-labels=$(echo "$input_json" | jq -r '.fields[].label')
-values=$(echo "$input_json" | jq -r '.fields[].value')
+fields=$(echo "$input_json" | jq -c '.fields[]')
 
-# Iterate over the arrays in parallel
-while IFS= read -r label && IFS= read -r value; do
-    add_or_update_env "$label" "$value"
-done <<< "$(paste <(echo "$labels") <(echo "$values"))"
+# Iterate over fields
+while IFS= read -r field; do
+    add_or_update_env "$field"
+done <<< "$fields"
 
 # Source the file to apply changes immediately
 source "$HOME/.bash_secrets"
