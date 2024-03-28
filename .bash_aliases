@@ -22,7 +22,7 @@ alias e='echo'
 
 # Dotfiles repo
 alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
-alias edit_setup='code ~/.cfg'
+alias edit_setup='code ~/.setup-scripts'
 
 # Alias function
 function cjq() {
