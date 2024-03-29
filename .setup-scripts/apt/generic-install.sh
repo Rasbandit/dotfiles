@@ -13,11 +13,12 @@ vlc \
 pavucontrol
 
 sudo snap refresh
-sudo snap install discord todoist zoom-client
+sudo snap install discord todoist
 sudo snap set core experimental.refresh-app-awareness=true
 
 ~/.setup-scripts/other-installs/nordvpn.sh
 ~/.setup-scripts/other-installs/droidcam.sh
+~/.setup-scripts/apt/zoom.sh
 
 ## INSOMNIA/postman
 ## Wireguard
