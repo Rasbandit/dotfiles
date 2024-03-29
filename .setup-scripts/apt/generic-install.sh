@@ -32,4 +32,3 @@ sudo snap set core experimental.refresh-app-awareness=true
 
 ## Nvidia drivers?
 ## wine/proton?
-## Readme
