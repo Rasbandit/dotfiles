@@ -19,6 +19,9 @@ sudo snap set core experimental.refresh-app-awareness=true
 ~/.setup-scripts/other-installs/nordvpn.sh
 ~/.setup-scripts/other-installs/droidcam.sh
 ~/.setup-scripts/apt/zoom.sh
+~/.setup-scripts/apt/signal.sh
+~/.setup-scripts/apt/exodus.sh
+~/.setup-scripts/apt/ledger.sh
 
 ## INSOMNIA/postman
 ## Wireguard
