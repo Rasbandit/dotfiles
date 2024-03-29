@@ -13,7 +13,7 @@ vlc \
 pavucontrol
 
 sudo snap refresh
-sudo snap install discord todoist
+sudo snap install todoist
 sudo snap set core experimental.refresh-app-awareness=true
 
 ~/.setup-scripts/other-installs/nordvpn.sh
@@ -23,6 +23,7 @@ sudo snap set core experimental.refresh-app-awareness=true
 ~/.setup-scripts/apt/exodus.sh
 ~/.setup-scripts/apt/ledger.sh
 ~/.setup-scripts/apt/steam.sh
+~/.setup-scripts/apt/discord.sh
 
 ## INSOMNIA/postman
 ## Wireguard
