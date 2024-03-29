@@ -22,10 +22,8 @@ sudo snap set core experimental.refresh-app-awareness=true
 
 ## INSOMNIA/postman
 ## Wireguard
-## droidcam
 ## terraform
 ## helm
-## tailscale
 ## steam
 
 ## Nvidia drivers?
