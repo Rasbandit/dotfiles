@@ -11,3 +11,5 @@ sudo add-apt-repository universe
 sudo apt install libfuse2
 
 wget -O ~/Documents/ledger-live-desktop.AppImage https://download.live.ledger.com/latest/linux
+
+chmod +x ~/Documents/ledger-live-desktop.AppImage
