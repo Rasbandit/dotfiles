@@ -35,7 +35,7 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
 gsettings set org.gnome.desktop.sound event-sounds false 
 
 # Clock
-gsettings set org.gnome.desktop.datetime automatic-timezone true
+gsettings set org.gnome.desktop.datetime automatic-timezone false
 gsettings set org.gnome.desktop.interface clock-format '24h'
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.interface clock-show-date true
