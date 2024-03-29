@@ -22,14 +22,13 @@ sudo snap set core experimental.refresh-app-awareness=true
 ~/.setup-scripts/apt/signal.sh
 ~/.setup-scripts/apt/exodus.sh
 ~/.setup-scripts/apt/ledger.sh
+~/.setup-scripts/apt/steam.sh
 
 ## INSOMNIA/postman
 ## Wireguard
 ## terraform
 ## helm
-## steam
 
 ## Nvidia drivers?
 ## wine/proton?
 ## Readme
-## Ledger
