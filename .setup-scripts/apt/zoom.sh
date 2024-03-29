@@ -7,5 +7,4 @@ sudo gpg --import package-signing-key.pub
 wget https://zoom.us/client/latest/zoom_amd64.deb
 sudo apt install -y ./zoom_amd64.deb
 
-sudo apt autoremove -y zoom --purge
 rm zoom_amd64.deb package-signing-key.pub
