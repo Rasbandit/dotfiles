@@ -9,11 +9,10 @@ curl \
 default-jdk \
 jq \
 yq \
-vlc \
 pavucontrol
 
 sudo snap refresh
-sudo snap install todoist
+sudo snap install todoist vlc
 sudo snap set core experimental.refresh-app-awareness=true
 
 ~/.setup-scripts/other-installs/nordvpn.sh
