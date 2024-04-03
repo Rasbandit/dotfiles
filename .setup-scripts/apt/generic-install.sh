@@ -26,12 +26,9 @@ sudo snap set core experimental.refresh-app-awareness=true
 ~/.setup-scripts/apt/discord.sh
 
 ## INSOMNIA/postman
-## Wireguard
+## Wireguard auto pull conf and keys files
 ## terraform
 ## helm
 
 ## Nvidia drivers?
 ## wine/proton?
-
-PstBRKcsRW7G3o3QWWR3psXnwvHlnUyhjQdfYE5+TEE=
-
