@@ -9,7 +9,8 @@ curl \
 default-jdk \
 jq \
 yq \
-pavucontrol
+pavucontrol \
+wireguard
 
 sudo snap refresh
 sudo snap install todoist vlc
