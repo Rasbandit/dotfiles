@@ -34,3 +34,4 @@ sudo snap set core experimental.refresh-app-awareness=true
 ## Nvidia drivers?
 ## wine/proton?
 ## Japanese
+## Auto power change on charging
