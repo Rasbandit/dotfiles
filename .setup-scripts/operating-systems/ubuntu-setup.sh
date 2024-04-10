@@ -41,3 +41,4 @@ else
     echo "Running a different desktop environment"
 fi
 
+mimeopen -d .yaml
