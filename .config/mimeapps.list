@@ -149,6 +149,7 @@ video/x-flc=vlc_vlc.desktop
 video/x-fli=vlc_vlc.desktop
 video/x-flv=vlc_vlc.desktop
 x-scheme-handler/tel=Zoom.desktop
+text/plain=code.desktop
 
 [Added Associations]
 application/xhtml+xml=firefox_firefox.desktop;firefox.desktop;
@@ -271,3 +272,4 @@ video/x-fli=vlc_vlc.desktop;
 video/x-flv=vlc_vlc.desktop;
 x-scheme-handler/tel=Zoom.desktop;
 application/x-yaml=code.desktop;
+text/plain=code.desktop;
