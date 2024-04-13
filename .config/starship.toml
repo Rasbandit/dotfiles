@@ -6,14 +6,14 @@ $directory\
 [](fg:#9580FF bg:#7970A9)\
 $git_branch\
 $git_status\
-[](fg:#7970A9 bg:#394260)\
+[](fg:#7970A9 bg:#454158)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[ ](fg:#454158 bg:#394260)\
+[](fg:#454158 bg:#394260)\
 $custom\
-[](fg:#394260)\
+[ ](fg:#394260)\
 $cmd_duration\
 \n$character"""
 
@@ -22,7 +22,7 @@ success_symbol = '[❯](#5BFF4C) '
 error_symbol = '[❯](#FF6A4C) '
 
 [directory]
-style = "fg:#e3e5e5 bg:#9580FF"
+style = "bold fg:#090c0c bg:#9580FF"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -127,21 +127,21 @@ format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
 [custom.nord]
 command = "nordvpn status | grep 'City:' | awk -F ': ' '{print $2}'"
 symbol = ""
-format = "[[ $symbol $output ](fg:#CFCFC2 bg:#454158)]($style)"
-style = "bg:#454158"
+format = "[[ $symbol $output ](fg:#CFCFC2 bg:#394260)]($style)"
+style = "bg:#394260"
 when = "nordvpn status | grep -q 'Status: Connected' && exit 0 || exit 1"
 
 [custom.tailscale]
 symbol = "󰈺"
-format = "[[ $symbol Tailscale ](fg:#CFCFC2 bg:#454158)]($style)"
-style = "bg:#454158"
+format = "[[ $symbol Tailscale ](fg:#CFCFC2 bg:#394260)]($style)"
+style = "bg:#394260"
 when = "tailscale status | grep -q 'Tailscale is stopped.' && exit 1 || exit 0"
 
 [custom.wireguard]
 command = "wg show interfaces"
 symbol = ""
-format = "[[ $symbol $output ](fg:#CFCFC2 bg:#454158)]($style)"
-style = "bg:#454158"
+format = "[[ $symbol $output ](fg:#CFCFC2 bg:#394260)]($style)"
+style = "bg:#394260"
 when = "wg show interfaces | grep -q . && exit 0 || exit 1"
 
 [time]
