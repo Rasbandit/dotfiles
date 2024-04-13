@@ -13,9 +13,9 @@ pavucontrol \
 wireguard \
 traceroute
 
-sudo snap refresh
-sudo snap install todoist vlc
-sudo snap set core experimental.refresh-app-awareness=true
+flatpak install flathub com.todoist.Todoist -y
+flatpak install flathub org.videolan.VLC -y
+flatpak install flathub com.discordapp.Discord -y
 
 ~/.setup-scripts/other-installs/nordvpn.sh
 ~/.setup-scripts/other-installs/droidcam.sh
@@ -33,5 +33,4 @@ sudo snap set core experimental.refresh-app-awareness=true
 
 ## Nvidia drivers?
 ## wine/proton?
-## Japanese
 ## Auto power change on charging
