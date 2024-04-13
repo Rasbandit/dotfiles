@@ -2,6 +2,9 @@
 
 sudo apt update
 
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 ~/.setup-scripts/apt/generic-install.sh
 ~/.setup-scripts/apt/spotify.sh
 ~/.setup-scripts/apt/vscode.sh
