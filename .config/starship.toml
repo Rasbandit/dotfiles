@@ -118,16 +118,23 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
 [custom.nord]
 command = "nordvpn status | grep 'City:' | awk -F ': ' '{print $2}'"
-symbol = "󰖂"
+symbol = ""
 format = "[[ $symbol $output](fg:#a0a9cb bg:#1d2230)]($style)"
 style = "bg:#1d2230"
 when = "nordvpn status | grep -q 'Status: Connected' && exit 0 || exit 1"
 
 [custom.tailscale]
-symbol = "󰖂"
+symbol = "󰈺"
 format = "[[ $symbol Tailscale](fg:#a0a9cb bg:#1d2230)]($style)"
 style = "bg:#1d2230"
 when = "tailscale status | grep -q 'Tailscale is stopped.' && exit 1 || exit 0"
+
+[custom.wireguard]
+command = "wg show interfaces"
+symbol = ""
+format = "[[ $symbol $output](fg:#a0a9cb bg:#1d2230)]($style)"
+style = "bg:#1d2230"
+when = "wg show interfaces | grep -q . && exit 0 || exit 1"
 
 [time]
 disabled = false
