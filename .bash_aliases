@@ -9,16 +9,16 @@ alias ..='cd ..'
 alias c="clear"
 alias rm='rm -I --preserve-root'
 
+# Generic
+alias e='echo'
+
 # Grep
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-
-
 # Kubernetes
 alias k='kubectl'
-alias e='echo'
 
 # Dotfiles repo
 alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
