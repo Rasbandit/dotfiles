@@ -13,8 +13,12 @@ $golang\
 $php\
 [](fg:#212736 bg:#1d2230)\
 $custom\
-[ ](fg:#1d2230)\
+[ ](fg:#1d2230) $cmd_duration\
 \n$character"""
+
+[character]
+success_symbol = '[❯](#5BFF4C) '
+error_symbol = '[❯](#FF6A4C) '
 
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
@@ -27,6 +31,12 @@ truncation_symbol = "…/"
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
+
+[cmd_duration]
+min_time = 500
+format = '[$duration](bold yellow)'
+show_milliseconds = true
+min_time_to_notify = 3_000
 
 [os]
 format = "[[$symbol](bg:#a3aed2 fg:#090c0c)]($style)"
