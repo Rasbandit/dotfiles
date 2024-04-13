@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# echo wget "https://downloads.slack-edge.com/linux_releases/slack-desktop-$(curl -s "https://slack.com/intl/es/release-notes/linux" | xmllint --html --xpath '//h2' - 2>/dev/null | head -n1 | sed 's/<h2>//;s#</h2>##;s/Slack //')-amd64.deb"
+wget "https://downloads.slack-edge.com/desktop-releases/linux/x64/4.37.101/slack-desktop-4.37.101-amd64.deb"
 
-curl -s https://slack.com/release-notes/linux | sed -n "/^.*<h2>Slack /{;s///;s/[^0-9.].*//p;q;}"
+sudo apt install slack-desktop-*-amd64.deb
