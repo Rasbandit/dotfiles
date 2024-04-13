@@ -103,7 +103,7 @@ format = '[[($all_status$ahead_behind )](fg:#9580FF bg:#394260)]($style)'
 [nodejs]
 symbol = ""
 style = "bg:#7970A9"
-format = '[ $symbol ($version) ](fg:#9580FF bg:#7970A9)'
+format = '[[ $symbol $version](fg:#FFAC9B)]($style)'
 
 [bun]
 symbol = "🍞"
