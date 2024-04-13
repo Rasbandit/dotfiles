@@ -12,9 +12,8 @@ $rust\
 $golang\
 $php\
 [](fg:#212736 bg:#1d2230)\
-$time\
+${custom.nord}\
 [ ](fg:#1d2230)\
-${custom.vpn}
 \n$character"""
 
 [directory]
@@ -117,10 +116,11 @@ symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
-[custom.vpn]
+[custom.nord]
 command = "nordvpn status | grep 'Country:' | awk -F ': ' '{print $2}'"
-format = "[connected to $output]($style)"
+format = "[[  $output](fg:#a0a9cb bg:#1d2230)]($style)"
 style = "bg:#1d2230"
+when = "echo 1"
 
 [time]
 disabled = false
