@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/opt/Signal/signal-desktop --no-sandbox --start-in-tray %U
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=todoist --file-forwarding com.todoist.Todoist -silent
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
