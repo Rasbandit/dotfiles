@@ -6,6 +6,7 @@ alias ldir='ls -d */'
 alias sctl='systemctl'
 alias edit_aliases='code ~/.bash_aliases'
 alias ..='cd ..'
+alias cdh='cd ~'
 alias c="clear"
 alias rm='rm -I --preserve-root'
 
@@ -42,6 +43,7 @@ alias please='sudo $(history -p !!)'
 alias extip='curl icanhazip.com'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
 alias sbrc='source ~/.bashrc'
+alias edit_bashrc='code ~/.bashrc'
 
 # Apt
 alias i='sudo apt install'
@@ -77,5 +79,6 @@ alias nrdct='nordvpn connect Tokyo'
 alias nrdd='nordvpn disconnect'
 alias nrds='nordvpn status'
 
-alias wguh='wg-quick up home'
-alias wgdh='wg-quick down home'
+alias wgq='wg-quick'
+alias wguh='sudo wgq up home'
+alias wgdh='sudo wgq down home'

@@ -55,6 +55,6 @@ profile_id=$(echo "$profiles_list" | grep -oP "\[.*?\]" | tr -d '[]' | awk '{pri
 profile_id="${profile_id//\'}"
 
 dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/visible-name "'default'"
-~/.setup-scripts/desktop-environments/terminal-theme/install.sh -s Dracula -p default --skip-dircolors
+~/.setup-scripts/desktop-environments/terminal-theme/install.sh -s Dracula -p default
 dconf write /org/gnome/terminal/legacy/profiles:/:${profile_id}/audible-bell false
 dconf write /org/gnome/terminal/legacy/profiles:/:${profile_id} scrollback-unlimited true
