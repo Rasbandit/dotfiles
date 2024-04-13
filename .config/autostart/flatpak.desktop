@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=todoist --file-forwarding com.todoist.Todoist @@u %U @@
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Todoist
+Name=Todoist
+Comment[en_US]=
+Comment=
