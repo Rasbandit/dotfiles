@@ -3,17 +3,18 @@ format = """
 [ $os](bg:#7970A9 fg:#090c0c)\
 [](bg:#9580FF fg:#7970A9)\
 $directory\
-[](fg:#9580FF bg:#394260)\
+[](fg:#9580FF bg:#7970A9)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#7970A9)\
+[](fg:#7970A9 bg:#394260)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#7970A9 bg:#454158)\
+[ ](fg:#454158 bg:#394260)\
 $custom\
-[ ](fg:#454158) $cmd_duration\
+[](fg:#394260)\
+$cmd_duration\
 \n$character"""
 
 [character]
@@ -92,36 +93,36 @@ Windows = "🪟 "
 
 [git_branch]
 symbol = ""
-style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#9580FF bg:#394260)]($style)'
+style = "bg:#7970A9"
+format = '[[ $symbol $branch ](fg:#22212C bg:#7970A9)]($style)'
 
 [git_status]
-style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#9580FF bg:#394260)]($style)'
+style = "bg:#7970A9"
+format = '[[($all_status$ahead_behind )](fg:#22212C bg:#7970A9)]($style)'
 
 [nodejs]
 symbol = ""
-format = '[[ $symbol ($version) ](fg:#22212C bg:#7970A9)]($style)'
+format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
 
 [bun]
 symbol = "🍞"
-style = "bg:#7970A9"
-format = '[[ $symbol ($version) ](fg:#22212C bg:#7970A9)]($style)'
+style = "bg:#454158"
+format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#7970A9"
-format = '[[ $symbol ($version) ](fg:#22212C bg:#7970A9)]($style)'
+style = "bg:#454158"
+format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:#7970A9"
-format = '[[ $symbol ($version) ](fg:#22212C bg:#7970A9)]($style)'
+style = "bg:#454158"
+format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
 
 [php]
 symbol = ""
-style = "bg:#7970A9"
-format = '[[ $symbol ($version) ](fg:#22212C bg:#7970A9)]($style)'
+style = "bg:#454158"
+format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
 
 [custom.nord]
 command = "nordvpn status | grep 'City:' | awk -F ': ' '{print $2}'"

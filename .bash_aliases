@@ -80,5 +80,5 @@ alias nrdd='nordvpn disconnect'
 alias nrds='nordvpn status'
 
 alias wgq='wg-quick'
-alias wguh='sudo wgq up home'
-alias wgdh='sudo wgq down home'
+alias wguh='sudo wg-quick up home'
+alias wgdh='sudo wg-quick down home'
