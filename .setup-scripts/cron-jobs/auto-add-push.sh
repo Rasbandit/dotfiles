@@ -7,6 +7,7 @@ function config() {
 config pull
 
 config add $HOME/.setup-scripts/*
+config add $HOME/.config/autostart/*
 
 config add -u
 
