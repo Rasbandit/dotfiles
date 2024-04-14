@@ -3,7 +3,6 @@
 sudo add-apt-repository multiverse
 sudo apt update&& sudo apt upgrade && sudo apt upgrade
 
-
 sudo apt install -y \
 curl \
 default-jdk \
@@ -11,7 +10,9 @@ jq \
 yq \
 pavucontrol \
 wireguard \
-traceroute
+traceroute \
+gnome-tweaks \
+dconf-editor
 
 flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub org.videolan.VLC -y

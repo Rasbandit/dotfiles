@@ -1,9 +1,5 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install -y \
-gnome-tweaks \
-dconf-editor
-
 # Default Apps
 sudo update-alternatives --set x-www-browser /usr/bin/vivaldi-stable
 sudo update-alternatives --set editor /usr/bin/code
