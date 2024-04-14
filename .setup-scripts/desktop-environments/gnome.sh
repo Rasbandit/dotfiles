@@ -46,7 +46,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 34
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'spotify.desktop', 'code.desktop', 'vivaldi-stable.desktop', 'org.gnome.Terminal.desktop']"
 
 # Font
-gsettings set org.gnome.desktop.interface monospace-font-name 'MonoLisa 13'
+gsettings set org.gnome.desktop.interface monospace-font-name 'MonoLisa Nerd Font Regular 13'
 
 # Terminal
 
