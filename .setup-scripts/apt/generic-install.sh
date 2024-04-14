@@ -12,7 +12,8 @@ pavucontrol \
 wireguard \
 traceroute \
 gnome-tweaks \
-dconf-editor
+dconf-editor \
+htop
 
 flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub org.videolan.VLC -y
