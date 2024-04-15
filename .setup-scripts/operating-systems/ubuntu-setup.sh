@@ -6,13 +6,6 @@ sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 ~/.setup-scripts/apt/generic-install.sh
-~/.setup-scripts/apt/spotify.sh
-~/.setup-scripts/apt/vscode.sh
-~/.setup-scripts/apt/vivaldi.sh
-~/.setup-scripts/apt/vivaldi.sh
-~/.setup-scripts/apt/dbeaver.sh
-
-~/.setup-scripts/other-installs/starship.sh
 
 if [ "$XDG_CURRENT_DESKTOP" = "ubuntu:GNOME" ]; then
     ~/.setup-scripts/desktop-environments/gnome.sh
