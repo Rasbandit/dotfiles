@@ -4,6 +4,10 @@
 sudo update-alternatives --set x-www-browser /usr/bin/vivaldi-stable
 sudo update-alternatives --set editor /usr/bin/code
 
+# Interface
+gsettings set org.gnome.desktop.interface enable-hot-corners false
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 # Appearance
 mkdir -p ~/Pictures/desktop-pictures
 curl -L -o ~/Pictures/desktop-pictures/galaxy.jpg "https://drive.google.com/uc?export=download&id=1CwD_YmH7e1-pRLHsYy9DDBT_vV93v6rm"
