@@ -17,7 +17,9 @@ htop \
 xz-utils \
 nemo \
 libavcodec-extra \
-vlc
+vlc \
+tlp \
+tlp-rdw
 
 sudo apt remove nautalis 
 
