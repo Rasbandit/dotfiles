@@ -10,9 +10,10 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 # Theme
 mkdir -p ~/.themes
-curl -L -o ~/.themes/dracula-slim.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1642717809/Dracula-slim.tar.xz?response-content-disposition=attachment%3B%2520Dracula-slim.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20240417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240417T094135Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=91243329a540389b1eef44d3577daa6fcf005aefc8dd50b0bf51643c5fdb99fe"
-gsettings set org.gnome.desktop.interface gtk-theme Dracula-slim
-gsettings set org.gnome.desktop.wm.preferences theme Dracula-slim
+curl -L -o ~/.themes/dracula-slim.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1642717809/Dracula.tar.xz?response-content-disposition=attachment%3B%2520Dracula.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20240417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240417T100245Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=91b4516727bd39266a2817369a094ee2457de8d34fc5103a4469adca19250d5f"
+gsettings set org.gnome.desktop.interface gtk-theme Dracula
+gsettings set org.gnome.desktop.wm.preferences theme Dracula
+gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
 rm ~/.themes/dracula-slim.tar.xz
 
 # Appearance
@@ -22,7 +23,6 @@ gsettings set org.gnome.desktop.background picture-uri "file:///home/rasbandit/P
 gsettings set org.gnome.desktop.background picture-uri-dark "file:///home/rasbandit/Pictures/desktop-pictures/galaxy.jpg"
 gsettings set org.gnome.desktop.screensaver picture-uri "file:///home/rasbandit/Pictures/desktop-pictures/galaxy.jpg"
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-purple-dark'
 
 # Mouse
 gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
@@ -57,8 +57,6 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications []
 gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift><Alt>Tab']"
-gsettings set org.gnome.desktop.interface gtk-theme 'Dracula'
-gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
 
 # Font
 gsettings set org.gnome.desktop.interface monospace-font-name 'MonoLisa Nerd Font Regular 13'
