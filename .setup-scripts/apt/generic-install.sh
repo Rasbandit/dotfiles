@@ -15,7 +15,9 @@ gnome-tweaks \
 dconf-editor \
 htop \
 xz-utils \
-nemo
+nemo \
+libavcodec-extra \
+vlc
 
 sudo apt remove nautalis 
 
