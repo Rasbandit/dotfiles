@@ -21,11 +21,12 @@ gsettings set org.gnome.desktop.wm.preferences theme Dracula
 gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
 rm ~/.themes/dracula.tar.xz
 
+# Icon
 mkdir -p ~/.icons
-curl -L -o ~/.icons/dracula.zip "https://drive.google.com/uc?export=download&id=1Q9SEf5s0-CldTSMPmIk-vN73y46cLeC4"
-unzip -d ~/.icons/ ~/.icons/dracula.zip
-gsettings set org.gnome.desktop.interface icon-theme "Dracula"
-rm ~/.icons/dracula.zip
+curl -L -o ~/.icons/papirus.tar.xz "https://drive.google.com/uc?export=download&id=1V3oPRCZwKLVXN24-T8vIV7ojecmpofUJ"
+tar -xf ~/.icons/papirus.tar.xz -C ~/.icons
+gsettings set org.gnome.desktop.interface icon-theme "Papirus"
+rm ~/.icons/papirus.tar.xz
 
 # Appearance
 mkdir -p ~/Pictures/desktop-pictures
