@@ -19,7 +19,9 @@ nemo \
 libavcodec-extra \
 vlc \
 tlp \
-tlp-rdw
+tlp-rdw \
+smartmontools \
+vainfo
 
 sudo apt remove nautalis 
 
