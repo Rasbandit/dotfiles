@@ -1,5 +1,7 @@
 #!/bin/bash
 
+gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com']"
+
 # Default Apps
 sudo update-alternatives --set x-www-browser /usr/bin/vivaldi-stable
 sudo update-alternatives --set editor /usr/bin/code
@@ -18,7 +20,7 @@ gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
 rm ~/.themes/dracula.tar.xz
 
 mkdir -p ~/.icons
-curl -L -o ~/.icons/ "https://objects.githubusercontent.com/github-production-repository-file-5c1aeb/118868345/5214870?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240417T104209Z&X-Amz-Expires=300&X-Amz-Signature=18f38bfbd445799ba6893bc3dbf6940a3ebd7b00cd7da1e400f473721644cf6c&X-Amz-SignedHeaders=host&actor_id=22157796&key_id=0&repo_id=118868345&response-content-disposition=attachment%3Bfilename%3DDracula.zip&response-content-type=application%2Fzip"
+wget -P ~/.icons/ "https://objects.githubusercontent.com/github-production-repository-file-5c1aeb/118868345/5214870?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240417T104209Z&X-Amz-Expires=300&X-Amz-Signature=18f38bfbd445799ba6893bc3dbf6940a3ebd7b00cd7da1e400f473721644cf6c&X-Amz-SignedHeaders=host&actor_id=22157796&key_id=0&repo_id=118868345&response-content-disposition=attachment%3Bfilename%3DDracula.zip&response-content-type=application%2Fzip"
 tar -xf ~/.icons/dracula.tar.xz -C ~/.icons
 gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
