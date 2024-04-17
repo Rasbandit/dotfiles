@@ -9,6 +9,6 @@ function cd_work() {
 
 alias cdw='cd_work'
 
-alias tsu='sudo tailscale up --accept-routes --exit-node=100.115.207.254 --exit-node-allow-lan-access=true --accept-dns=false'
+alias tsu='sudo tailscale up --accept-routes --exit-node=100.115.207.254 --exit-node-allow-lan-access=true'
 alias tsd='sudo tailscale down'
 alias tss='tailscale status'
