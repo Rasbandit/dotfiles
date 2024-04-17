@@ -13,7 +13,8 @@ wireguard \
 traceroute \
 gnome-tweaks \
 dconf-editor \
-htop
+htop \
+xz-utils
 
 sudo flatpak install flathub com.todoist.Todoist -y
 sudo flatpak install flathub org.videolan.VLC -y
