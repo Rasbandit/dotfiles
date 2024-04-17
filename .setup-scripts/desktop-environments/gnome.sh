@@ -10,11 +10,17 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 # Theme
 mkdir -p ~/.themes
-curl -L -o ~/.themes/dracula-slim.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1642717809/Dracula.tar.xz?response-content-disposition=attachment%3B%2520Dracula.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20240417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240417T100245Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=91b4516727bd39266a2817369a094ee2457de8d34fc5103a4469adca19250d5f"
+curl -L -o ~/.themes/dracula.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1642717809/Dracula.tar.xz?response-content-disposition=attachment%3B%2520Dracula.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20240417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240417T100245Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=91b4516727bd39266a2817369a094ee2457de8d34fc5103a4469adca19250d5f"
+tar -xf ~/.themes/dracula.tar.xz -C ~/.themes
 gsettings set org.gnome.desktop.interface gtk-theme Dracula
 gsettings set org.gnome.desktop.wm.preferences theme Dracula
 gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
-rm ~/.themes/dracula-slim.tar.xz
+rm ~/.themes/dracula.tar.xz
+
+mkdir -p ~/.icons
+curl -L -o ~/.icons/ "https://objects.githubusercontent.com/github-production-repository-file-5c1aeb/118868345/5214870?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240417T104209Z&X-Amz-Expires=300&X-Amz-Signature=18f38bfbd445799ba6893bc3dbf6940a3ebd7b00cd7da1e400f473721644cf6c&X-Amz-SignedHeaders=host&actor_id=22157796&key_id=0&repo_id=118868345&response-content-disposition=attachment%3Bfilename%3DDracula.zip&response-content-type=application%2Fzip"
+tar -xf ~/.icons/dracula.tar.xz -C ~/.icons
+gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
 # Appearance
 mkdir -p ~/Pictures/desktop-pictures
