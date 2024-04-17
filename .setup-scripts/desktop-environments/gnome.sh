@@ -72,8 +72,12 @@ gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift
 # Font
 gsettings set org.gnome.desktop.interface monospace-font-name 'MonoLisa Nerd Font Regular 13'
 
-# Terminal
+# Nemo
+gsettings set org.nemo.preferences show-location-entry true
+gsettings set org.nemo.list-view default-visible-columns "['name', 'size', 'type', 'date_modified', 'date_created_with_time']"
+gsettings set org.nemo.preferences show-open-in-terminal-toolbar true
 
+# Terminal
 profiles_list=$(dconf read /org/gnome/terminal/legacy/profiles:/list)
 profile_id=$(echo "$profiles_list" | grep -oP "\[.*?\]" | tr -d '[]' | awk '{print $1}')
 profile_id="${profile_id//\'}"
