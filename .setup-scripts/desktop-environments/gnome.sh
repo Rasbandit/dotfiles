@@ -10,7 +10,7 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 # Theme
 mkdir -p ~/.themes
-curl -L -o ~/.themes/dracula-slim.tar.xz "https://drive.google.com/uc?export=download&id=1YBD8vN1pQ6HUiDYyBvRa2esNqY10N1P_"
+curl -L -o ~/.themes/dracula-slim.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1642717809/Dracula-slim.tar.xz?response-content-disposition=attachment%3B%2520Dracula-slim.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20240417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240417T094135Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=91243329a540389b1eef44d3577daa6fcf005aefc8dd50b0bf51643c5fdb99fe"
 gsettings set org.gnome.desktop.interface gtk-theme Dracula-slim
 gsettings set org.gnome.desktop.wm.preferences theme Dracula-slim
 rm ~/.themes/dracula-slim.tar.xz
