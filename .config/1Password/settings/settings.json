@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "sshAgent.sshAuthorizatonModel": "application",
+  "security.authenticatedUnlock.enabled": true,
+  "app.theme": "dark",
+  "security.authenticatedUnlock.requireAccountPasswordAfter": "\"thirty-days\"",
+  "security.autolock.minutes": 30,
+  "sshAgent.storeKeyTitles": true,
+  "sshAgent.storeSshKeyTitlesResponseGiven": true,
+  "sshAgent.enabled": true,
+  "sshAgent.sshSessionDuration": "infinite",
+  "developers.cliSharedLockState.enabled": true,
+  "passwordGenerator.size.characters": 34,
+  "passwordGenerator.includeSymbols": true,
+  "authTags": {
+    "app.theme": "NJ+pOLroBkW4CG2Np4gS2oA0H3bneKzdsxXhW55iUF4",
+    "developers.cliSharedLockState.enabled": "ax7gH92DULt6jKxJs936k3rRMehog/nTM3873S6bWxI",
+    "passwordGenerator.includeSymbols": "BlylqVrFZOG9YnbthFypJSjunpuadDHMH+qOsGX7xQU",
+    "passwordGenerator.size.characters": "i9ERIAaQgRFakJd7TQu6Z5B32r/ksdvdS78sbo5mzhQ",
+    "security.authenticatedUnlock.enabled": "AcFxbxRC97PyV4xEB7PnpeKDNP/S27zJqC/3OWG27uw",
+    "security.authenticatedUnlock.requireAccountPasswordAfter": "eXZDNwUX4dIegqsPnsURerl+qxFKVdwE8tjCBRnssBU",
+    "security.autolock.minutes": "LWlAQnr3LYdh3r4rLJh1pHimYUzRttBn+fyLKXGvkYU",
+    "sshAgent.enabled": "YVsiuC/5bzyywhvUvW6pHyoUDzugRn02nAY1QU2wn3E",
+    "sshAgent.sshAuthorizatonModel": "14yq2QgG4/5x/3OvOkd/weKmYmfZ4DMkfp+vxr8JAjs",
+    "sshAgent.sshSessionDuration": "DxTMUqZfGqtujggJQdoXnjTv1+B//X6UetdNVbmoJ1c",
+    "sshAgent.storeKeyTitles": "ekVT9Rb5O50e8uvXzunjg91hMGHWMwJEE/Dd0bPzYFM",
+    "sshAgent.storeSshKeyTitlesResponseGiven": "DYghkUTRuUcuqnAnCRonreLzOC9QWeFLCnlRd11wM3Y"
+  }
+}

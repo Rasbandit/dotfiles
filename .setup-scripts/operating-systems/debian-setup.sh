@@ -5,6 +5,8 @@ sudo apt update
 sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+sudo apt-get install gedit dbus-x11 -y
+
 ~/.setup-scripts/apt/generic-install.sh
 
 if [ "$XDG_CURRENT_DESKTOP" = "ubuntu:GNOME" ]; then
@@ -36,3 +38,5 @@ elif [ "$XDG_CURRENT_DESKTOP" = "Unity" ]; then
 else
     echo "Running a different desktop environment"
 fi
+
+mimeopen -d .yaml

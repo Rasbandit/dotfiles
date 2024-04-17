@@ -15,11 +15,11 @@ gnome-tweaks \
 dconf-editor \
 htop
 
-flatpak install flathub com.todoist.Todoist -y
-flatpak install flathub org.videolan.VLC -y
-flatpak install flathub com.discordapp.Discord -y
+sudo flatpak install flathub com.todoist.Todoist -y
+sudo flatpak install flathub org.videolan.VLC -y
+sudo flatpak install flathub com.discordapp.Discord -y
 
-~/.setup-scripts/other-installs/nordvpn.sh
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 ~/.setup-scripts/apt/droidcam.sh
 ~/.setup-scripts/apt/1pass.sh
 ~/.setup-scripts/apt/zoom.sh
@@ -27,7 +27,6 @@ flatpak install flathub com.discordapp.Discord -y
 ~/.setup-scripts/apt/exodus.sh
 ~/.setup-scripts/apt/ledger.sh
 ~/.setup-scripts/apt/steam.sh
-~/.setup-scripts/apt/discord.sh
 ~/.setup-scripts/apt/vivaldi.sh
 ~/.setup-scripts/apt/vscode.sh
 ~/.setup-scripts/apt/spotify.sh
