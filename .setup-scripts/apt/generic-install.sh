@@ -14,7 +14,8 @@ traceroute \
 gnome-tweaks \
 dconf-editor \
 htop \
-xz-utils
+xz-utils \
+nemo
 
 sudo flatpak install flathub com.todoist.Todoist -y
 sudo flatpak install flathub org.videolan.VLC -y
