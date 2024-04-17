@@ -21,7 +21,7 @@ rm ~/.themes/dracula.tar.xz
 
 mkdir -p ~/.icons
 curl -L -o ~/.icons/dracula.zip "https://drive.google.com/uc?export=download&id=1Q9SEf5s0-CldTSMPmIk-vN73y46cLeC4"
-tar -xf ~/.icons/dracula.tar.xz -C ~/.icons
+unzip -d ~/.icons/ ~/.icons/dracula.zip
 gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
 # Appearance
