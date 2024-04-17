@@ -4,11 +4,7 @@
 
 OS_INFO=$(cat /etc/os-release)
 
-# Use grep to filter out the line containing ID= and then use cut to extract the value
 OS=$(echo "$OS_INFO" | grep "^ID=" | cut -d= -f2)
-
-# Print the value of the ID variable
-echo "$id"
 
 # Check if the distribution is Ubuntu
 if [ $OS = "ubuntu" ]; then

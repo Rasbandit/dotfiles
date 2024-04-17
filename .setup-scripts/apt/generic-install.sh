@@ -17,6 +17,8 @@ htop \
 xz-utils \
 nemo
 
+sudo apt remove nautalis 
+
 sudo flatpak install flathub com.todoist.Todoist -y
 sudo flatpak install flathub org.videolan.VLC -y
 sudo flatpak install flathub com.discordapp.Discord -y
@@ -33,9 +35,9 @@ sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 ~/.setup-scripts/apt/vscode.sh
 ~/.setup-scripts/apt/spotify.sh
 ~/.setup-scripts/apt/dbeaver.sh
+~/.setup-scripts/apt/insomnia.sh
 ~/.setup-scripts/other-installs/starship.sh
 
-## INSOMNIA/postman
 ## Wireguard auto pull conf and keys files
 ## terraform
 ## helm

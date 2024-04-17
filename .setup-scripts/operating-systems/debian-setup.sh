@@ -9,7 +9,7 @@ sudo apt-get install gedit dbus-x11 -y
 
 ~/.setup-scripts/apt/generic-install.sh
 
-if [ "$XDG_CURRENT_DESKTOP" = "ubuntu:GNOME" ]; then
+if [ "$XDG_CURRENT_DESKTOP" = "GNOME" ]; then
     ~/.setup-scripts/desktop-environments/gnome.sh
 elif [ "$XDG_CURRENT_DESKTOP" = "Unity" ]; then
     echo "Command run from within VScode, run from terminal application"
@@ -38,5 +38,3 @@ elif [ "$XDG_CURRENT_DESKTOP" = "Unity" ]; then
 else
     echo "Running a different desktop environment"
 fi
-
-mimeopen -d .yaml
