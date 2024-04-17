@@ -5,3 +5,8 @@ curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.tailscale-keyring.list
 
 sudo apt-get update
 sudo apt-get install tailscale -y
+
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+sudo systemctl restart systemd-resolved
+sudo systemctl restart NetworkManager
+sudo systemctl restart tailscaled

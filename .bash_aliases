@@ -37,7 +37,7 @@ alias npmr='rm -rf node_modules package-lock.json; npm i'
 alias fuck='git reset --soft HEAD^'
 
 # bash
-alias please='sudo $(history -p !!)'
+alias pls='sudo $(history -p !!)'
 
 # Utils
 alias extip='curl icanhazip.com'
