@@ -45,6 +45,12 @@ gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 34
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'spotify.desktop', 'code.desktop', 'vivaldi-stable.desktop', 'org.gnome.Terminal.desktop']"
 
+# Desktop
+gsettings set org.gnome.desktop.wm.keybindings switch-applications []
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward []
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift><Alt>Tab']"
+
 # Font
 gsettings set org.gnome.desktop.interface monospace-font-name 'MonoLisa Nerd Font Regular 13'
 
