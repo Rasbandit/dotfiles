@@ -8,6 +8,12 @@ sudo update-alternatives --set editor /usr/bin/code
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 
+# Theme
+mkdir -p ~/.themes
+
+gsettings set org.gnome.desktop.interface gtk-theme Dracula-slim
+gsettings set org.gnome.desktop.wm.preferences theme Dracula-slim
+
 # Appearance
 mkdir -p ~/Pictures/desktop-pictures
 curl -L -o ~/Pictures/desktop-pictures/galaxy.jpg "https://drive.google.com/uc?export=download&id=1CwD_YmH7e1-pRLHsYy9DDBT_vV93v6rm"
