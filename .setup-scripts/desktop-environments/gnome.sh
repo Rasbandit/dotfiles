@@ -1,5 +1,7 @@
 #!/bin/bash
 
+gsettings set org.gnome.shell disabled-extensions "['window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com']"
+
 gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com']"
 
 # Default Apps
@@ -23,6 +25,7 @@ mkdir -p ~/.icons
 curl -L -o ~/.icons/dracula.zip "https://drive.google.com/uc?export=download&id=1Q9SEf5s0-CldTSMPmIk-vN73y46cLeC4"
 unzip -d ~/.icons/ ~/.icons/dracula.zip
 gsettings set org.gnome.desktop.interface icon-theme "Dracula"
+rm ~/.icons/dracula.zip
 
 # Appearance
 mkdir -p ~/Pictures/desktop-pictures

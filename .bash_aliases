@@ -44,6 +44,7 @@ alias extip='curl icanhazip.com'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
 alias sbrc='source ~/.bashrc'
 alias edit_bashrc='code ~/.bashrc'
+alias edit_history='code ~/.bash_history'
 
 # Apt
 alias i='sudo apt install'
