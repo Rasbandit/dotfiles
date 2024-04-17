@@ -78,6 +78,9 @@ gsettings set org.nemo.preferences show-location-entry true
 gsettings set org.nemo.list-view default-visible-columns "['name', 'size', 'type', 'date_modified', 'date_created_with_time']"
 gsettings set org.nemo.preferences show-open-in-terminal-toolbar true
 
+# Search
+gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Software.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Contacts.desktop']"
+
 # Terminal
 profiles_list=$(dconf read /org/gnome/terminal/legacy/profiles:/list)
 profile_id=$(echo "$profiles_list" | grep -oP "\[.*?\]" | tr -d '[]' | awk '{print $1}')
