@@ -9,24 +9,40 @@ gnome-extensions-cli install \
 blur-my-shell@aunetx \
 appindicatorsupport@rgcjonas.gmail.com \
 Vitals@CoreCoding.com \
-pano@elhan.io
+pano@elhan.io \
+quick-settings-tweaks@qwreey
 
 sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/schemas/org.gnome.shell.extensions.appindicator.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com/schemas/org.gnome.shell.extensions.vitals.gschema.xml /usr/share/glib-2.0/schemas/
+sudo cp ~/.local/share/gnome-shell/extensions/pano@elhan.io/schemas/org.gnome.shell.extensions.pano.gschema.xml /usr/share/glib-2.0/schemas/
+sudo cp ~/.local/share/gnome-shell/extensions/quick-settings-tweaks@qwreey/schemas/org.gnome.shell.extensions.quick-settings-tweaks.gschema.xml /usr/share/glib-2.0/schemas/
 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 
-
+# Blur my shell
 gsettings set org.gnome.shell.extensions.blur-my-shell sigma 10
 gsettings set org.gnome.shell.extensions.blur-my-shell brightness 0.7
 gsettings set org.gnome.shell.extensions.blur-my-shell color "(0.0, 0.0, 0.0, 0.0)"
 gsettings set org.gnome.shell.extensions.blur-my-shell noise-amount 0.02
 
+# Vitals
 gsettings set org.gnome.shell.extensions.vitals hot-sensors "['_memory_usage_', '_processor_usage_', '__temperature_avg__', '_battery_time_left_']"
 gsettings set org.gnome.shell.extensions.vitals show-battery true
+
+# Pano Clipboard manager
+gsettings set org.gnome.shell.extensions.pano send-notification-on-copy false
+gsettings set org.gnome.shell.extensions.pano play-audio-on-copy false
+gsettings set org.gnome.shell.extensions.pano keep-search-entry false
+
+# Quick Settings Tweaks
+/org/gnome/shell/extensions/quick-settings-tweaks/output-show-selected
+  true
+
+/org/gnome/shell/extensions/quick-settings-tweaks/input-show-selected
+  true
 
 # Default Apps
 sudo update-alternatives --set x-www-browser /usr/bin/vivaldi-stable
