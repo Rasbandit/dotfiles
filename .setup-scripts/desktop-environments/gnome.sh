@@ -1,11 +1,13 @@
 #!/bin/bash
 
 pip3 install --upgrade gnome-extensions-cli --break-system-packages
+gnome-extensions-cli install blur-my-shell@aunetx
 
-
-gsettings set org.gnome.shell disabled-extensions "['window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com']"
-
-gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com']"
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+gsettings set org.gnome.shell.extensions.blur-my-shell sigma 10
+gsettings set org.gnome.shell.extensions.blur-my-shell brightness 0.7
+gsettings set org.gnome.shell.extensions.blur-my-shell color "(0.0, 0.0, 0.0, 0.0)"
+gsettings set org.gnome.shell.extensions.blur-my-shell noise-amount 0.02
 
 # Default Apps
 sudo update-alternatives --set x-www-browser /usr/bin/vivaldi-stable
