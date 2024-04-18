@@ -26,8 +26,8 @@ vainfo
 sudo apt remove nautalis 
 
 sudo flatpak install flathub com.todoist.Todoist -y
-sudo flatpak install flathub org.videolan.VLC -y
 sudo flatpak install flathub com.discordapp.Discord -y
+sudo flatpak install io.github.realmazharhussain.GdmSettings -y
 
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 ~/.setup-scripts/apt/droidcam.sh

@@ -36,13 +36,12 @@ gsettings set org.gnome.shell.extensions.vitals show-battery true
 gsettings set org.gnome.shell.extensions.pano send-notification-on-copy false
 gsettings set org.gnome.shell.extensions.pano play-audio-on-copy false
 gsettings set org.gnome.shell.extensions.pano keep-search-entry false
+gsettings set org.gnome.shell.extensions.pano history-length 100
 
 # Quick Settings Tweaks
-/org/gnome/shell/extensions/quick-settings-tweaks/output-show-selected
-  true
+gsettings set org.gnome.shell.extensions.quick-settings-tweaks output-show-selected true
 
-/org/gnome/shell/extensions/quick-settings-tweaks/input-show-selected
-  true
+gsettings set org.gnome.shell.extensions.quick-settings-tweaks input-show-selected true
 
 # Default Apps
 sudo update-alternatives --set x-www-browser /usr/bin/vivaldi-stable
