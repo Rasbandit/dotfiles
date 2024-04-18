@@ -3,7 +3,13 @@
 pip3 install --upgrade gnome-extensions-cli --break-system-packages
 gnome-extensions-cli install blur-my-shell@aunetx
 
+sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
+
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+
+
 gsettings set org.gnome.shell.extensions.blur-my-shell sigma 10
 gsettings set org.gnome.shell.extensions.blur-my-shell brightness 0.7
 gsettings set org.gnome.shell.extensions.blur-my-shell color "(0.0, 0.0, 0.0, 0.0)"
