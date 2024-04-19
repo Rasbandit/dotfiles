@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sudo add-apt-repository multiverse
+sudo add-apt-repository multiverse -y
+sudo add-apt-repository ppa:agornostal/ulauncher  -y
 sudo apt update && sudo apt upgrade 
 
 sudo apt install -y \
@@ -21,7 +22,8 @@ vlc \
 tlp \
 tlp-rdw \
 smartmontools \
-vainfo
+vainfo \
+ulauncher
 
 sudo apt remove nautalis 
 
