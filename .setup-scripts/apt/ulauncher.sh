@@ -7,3 +7,5 @@ echo "deb [signed-by=/usr/share/keyrings/ulauncher-archive-keyring.gpg] \
           http://ppa.launchpad.net/agornostal/ulauncher/ubuntu jammy main" \
           | sudo tee /etc/apt/sources.list.d/ulauncher-jammy.list
 sudo apt update && sudo apt install ulauncher -y
+
+git clone https://github.com/dracula/ulauncher.git ~/.config/ulauncher/user-themes/dracula-ulauncher
