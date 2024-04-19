@@ -29,6 +29,7 @@ sudo apt remove nautalis
 sudo flatpak install flathub com.todoist.Todoist -y
 sudo flatpak install flathub com.discordapp.Discord -y
 sudo flatpak install io.github.realmazharhussain.GdmSettings -y
+sudo flatpak install flathub com.github.d4nj1.tlpui
 
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 ~/.setup-scripts/apt/droidcam.sh
