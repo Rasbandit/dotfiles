@@ -44,7 +44,7 @@ sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 ~/.setup-scripts/apt/spotify.sh
 ~/.setup-scripts/apt/dbeaver.sh
 ~/.setup-scripts/apt/insomnia.sh
-~/.setup-scripts/apt/ulauncher.sh
+~/.setup-scripts/apt/rofi.sh
 ~/.setup-scripts/other-installs/starship.sh
 
 ## Wireguard auto pull conf and keys files
