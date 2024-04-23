@@ -3,17 +3,17 @@ format = """
 [ $os](bg:#7970A9 fg:#090c0c)\
 [](bg:#9580FF fg:#7970A9)\
 $directory\
-[](fg:#9580FF bg:#7970A9)\
+[](fg:#9580FF bg:#9B66CF)\
 $git_branch\
 $git_status\
-[](fg:#7970A9 bg:#6F637A)\
+[](fg:#9B66CF bg:#8155AD)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#6F637A bg:#394260)\
+[](fg:#8155AD bg:#4F3469)\
 $custom\
-[ ](fg:#394260)\
+[ ](fg:#4F3469)\
 $cmd_duration\
 \n$character"""
 
@@ -93,59 +93,59 @@ Windows = " "
 
 [git_branch]
 symbol = ""
-style = "bg:#7970A9"
-format = '[[ $symbol $branch ](fg:#22212C bg:#7970A9)]($style)'
+style = "bg:#9B66CF"
+format = '[[ $symbol $branch ](fg:#22212C bg:#9B66CF)]($style)'
 
 [git_status]
-style = "bg:#7970A9"
-format = '[[($all_status$ahead_behind )](fg:#22212C bg:#7970A9)]($style)'
+style = "bg:#9B66CF"
+format = '[[($all_status$ahead_behind )](fg:#22212C bg:#9B66CF)]($style)'
 
 [nodejs]
 symbol = ""
-format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
+format = '[[ $symbol ($version)](fg:#CFCFC2 bg:#8155AD)]($style)'
 
 [bun]
 symbol = "🍞"
-style = "bg:#454158"
-format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
+style = "bg:#8155AD"
+format = '[[ $symbol ($version)](fg:#CFCFC2 bg:#8155AD)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#454158"
-format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
+style = "bg:#8155AD"
+format = '[[ $symbol ($version)](fg:#CFCFC2 bg:#8155AD)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:#454158"
-format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
+style = "bg:#8155AD"
+format = '[[ $symbol ($version)](fg:#CFCFC2 bg:#8155AD)]($style)'
 
 [php]
 symbol = ""
-style = "bg:#454158"
-format = '[[ $symbol ($version) ](fg:#CFCFC2 bg:#454158)]($style)'
+style = "bg:#8155AD"
+format = '[[ $symbol ($version)](fg:#CFCFC2 bg:#8155AD)]($style)'
 
 [custom.nord]
 command = "nordvpn status | grep 'City:' | awk -F ': ' '{print $2}'"
 symbol = ""
-format = "[[ $symbol $output ](fg:#CFCFC2 bg:#394260)]($style)"
-style = "bg:#394260"
+format = "[[ $symbol $output ](fg:#CFCFC2 bg:#4F3469)]($style)"
+style = "bg:#4F3469"
 when = "nordvpn status | grep -q 'Status: Connected' && exit 0 || exit 1"
 
 [custom.tailscale]
 symbol = "󰈺"
-format = "[[ $symbol Tailscale ](fg:#CFCFC2 bg:#394260)]($style)"
-style = "bg:#394260"
+format = "[[ $symbol Tailscale ](fg:#CFCFC2 bg:#4F3469)]($style)"
+style = "bg:#4F3469"
 when = "tailscale status | grep -q 'Tailscale is stopped.' && exit 1 || exit 0"
 
 [custom.wireguard]
 command = "wg show interfaces"
 symbol = ""
-format = "[[ $symbol $output ](fg:#CFCFC2 bg:#394260)]($style)"
-style = "bg:#394260"
+format = "[[ $symbol $output ](fg:#CFCFC2 bg:#4F3469)]($style)"
+style = "bg:#4F3469"
 when = "wg show interfaces | grep -q . && exit 0 || exit 1"
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#454158"
-format = '[[  $time ](fg:#CFCFC2 bg:#454158)]($style)'
+style = "bg:#8155AD"
+format = '[[  $time ](fg:#CFCFC2 bg:#8155AD)]($style)'
