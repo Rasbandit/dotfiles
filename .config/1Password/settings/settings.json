@@ -11,11 +11,11 @@
   "sshAgent.sshSessionDuration": "infinite",
   "developers.cliSharedLockState.enabled": true,
   "passwordGenerator.size.characters": 34,
-  "passwordGenerator.includeSymbols": true,
+  "passwordGenerator.includeSymbols": false,
   "authTags": {
     "app.theme": "NJ+pOLroBkW4CG2Np4gS2oA0H3bneKzdsxXhW55iUF4",
     "developers.cliSharedLockState.enabled": "ax7gH92DULt6jKxJs936k3rRMehog/nTM3873S6bWxI",
-    "passwordGenerator.includeSymbols": "BlylqVrFZOG9YnbthFypJSjunpuadDHMH+qOsGX7xQU",
+    "passwordGenerator.includeSymbols": "VUWQrd2HjpH7tVpTyZF55mzQ26hMrUiU9WMbDtCyEw8",
     "passwordGenerator.size.characters": "i9ERIAaQgRFakJd7TQu6Z5B32r/ksdvdS78sbo5mzhQ",
     "security.authenticatedUnlock.enabled": "AcFxbxRC97PyV4xEB7PnpeKDNP/S27zJqC/3OWG27uw",
     "security.authenticatedUnlock.requireAccountPasswordAfter": "eXZDNwUX4dIegqsPnsURerl+qxFKVdwE8tjCBRnssBU",
