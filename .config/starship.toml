@@ -6,12 +6,12 @@ $directory\
 [](fg:#9580FF bg:#7970A9)\
 $git_branch\
 $git_status\
-[](fg:#7970A9 bg:#454158)\
+[](fg:#7970A9 bg:#6F637A)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#454158 bg:#394260)\
+[](fg:#6F637A bg:#394260)\
 $custom\
 [ ](fg:#394260)\
 $cmd_duration\
