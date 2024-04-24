@@ -24,5 +24,4 @@ aws eks update-kubeconfig --name dev-chain-platform-eks --profile chain
 aws eks update-kubeconfig --name stage-chain-platform-eks --profile chain
 aws eks update-kubeconfig --name prod-chain-platform-eks --profile chain
 
-aws eks update-kubeconfig --name stage-galachain
 aws eks update-kubeconfig --name prod-galachain
