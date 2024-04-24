@@ -3,13 +3,9 @@
 # touch ~/.bash_secrets
 
 mkdir -p ~/.local/share/fonts
-curl -L -o ~/.local/share/fonts/fonts.zip "https://drive.google.com/uc?export=download&id=13kveIDyJuVSUyvr_hPuxhuXrSTFdSu2l"
-
-https://drive.google.com/drive/folders/13kveIDyJuVSUyvr_hPuxhuXrSTFdSu2l?usp=drive_link
-
-# tar -xf ~/.icons/papirus.tar.xz -C ~/.icons
-# gsettings set org.gnome.desktop.interface icon-theme "Papirus"
-# rm ~/.icons/papirus.tar.xz
+curl -L -o ~/.local/share/fonts/fonts.tar.gz "https://drive.google.com/uc?export=download&id=1Y6pr7AVh_WvU0jOLPscu_T8PvX8cxmfr"
+tar -xf ~/.local/share/fonts/fonts.tar.gz -C ~/.local/share/fonts
+rm ~/.local/share/fonts/fonts.tar.gz
 
 # OS_INFO=$(cat /etc/os-release)
 
