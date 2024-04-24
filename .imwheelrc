@@ -1,0 +1,7 @@
+".*"
+None, Up, Button4, 0
+None, Down, Button5, 0
+Control_L, Up, Control_LButton4
+Control_L, Down, Control_LButton5
+Shift_L, Up, Shift_LButton4
+Shift_L, Down, Shift_LButton5
