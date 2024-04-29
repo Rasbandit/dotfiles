@@ -74,8 +74,20 @@ function docker_build_publish() {
 alias dbp="docker_build_publish"
 
 # VPN
-alias nrd='nordvpn'
-alias nrdc='nordvpn connect'
+alias nrd='nordvpn
+'
+function nordvpn_defualt_connect() {
+    nordvpn set technology nordlynx
+
+    nordvpn connect
+}
+alias nrdc='nordvpn_defualt_connect'
+function nordvpn_defualt_connect() {
+    nordvpn set technology nordlynx
+
+    nordvpn connect
+}
+
 alias nrdct='nordvpn connect Tokyo'
 alias nrdd='nordvpn disconnect'
 alias nrds='nordvpn status'
