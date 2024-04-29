@@ -78,19 +78,22 @@ alias nrd='nordvpn
 '
 function nordvpn_defualt_connect() {
     nordvpn set technology nordlynx
+    nordvpn set lan-discovery enable
 
     nordvpn connect
 }
-alias nrdc='nordvpn_defualt_connect'
-function nordvpn_defualt_connect() {
-    nordvpn set technology nordlynx
+alias nrdc='nordvpn_connect_city'
 
-    nordvpn connect
-}
-
-alias nrdct='nordvpn connect Tokyo'
-alias nrdd='nordvpn disconnect'
+alias nrdd='nordvpn d'
 alias nrds='nordvpn status'
+
+function nordvpn_connect_public() {
+    nordvpn set technology openvpn
+    nordvpn set lan-discovery disable
+
+    nordvpn connect "${1}"
+}
+alias nrdcp="nordvpn_connect_public"
 
 alias wgq='wg-quick'
 alias wguh='sudo wg-quick up home'
