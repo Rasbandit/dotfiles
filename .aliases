@@ -1,16 +1,16 @@
 # File system aliases
 alias ls='exa'
 alias ldir='exa -d */'
-alias ll='exa -alFhg --icons --group-directories-first'
-alias lld='exa -alFD'
-alias sctl='systemctl'
-alias ..='cd ..'
-alias cdh='cd ~'
+alias ll='exa -alFh --icons --group-directories-first'
+alias lld='exa -alFDh'
+alias ..='exa ..'
+alias cdh='exa ~'
+alias cdw="exa ~/Documents/work"
 alias c="clear"
 alias rm='rm -I --preserve-root'
-alias cdw="cd ~/Documents/work"
-alias rg="grep"
+alias grep="rg"
 alias cat='batcat'
+alias sctl='systemctl'
 
 # Edit Files/folders
 alias edit_aliases='code ~/.aliases'
@@ -18,15 +18,16 @@ alias edit_starship='code ~/.config/starship.toml'
 alias edit_setup='code ~/.setup-scripts'
 alias edit_bashrc='code ~/.bashrc'
 alias edit_history='code ~/.bash_history'
-alias edit_fish='code ~/.config/fish'
+alias edit_functions='code ~/.bash_functions'
+alias sbrc='source ~/.bashrc'
 
 # Generic
 alias e='echo'
 
 # Grep
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias grep='rg --color=auto'
+alias egrep='rg --color=auto'
+alias fgrep='rg --color=auto'
 
 # Kubernetes
 alias k='kubectl'
@@ -46,28 +47,53 @@ alias pls='sudo $(history -p !!)'
 # Utils
 alias extip='curl icanhazip.com'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
-alias sbrc='source ~/.bashrc'
+
+alias cs="create_script"
+function create_script() {
+    local SCRIPT_NAME=${1:-"test"}
+
+    touch ./${SCRIPT_NAME}.sh
+    chmod +x ./${SCRIPT_NAME}.sh
+    echo '#!/bin/bash' >> ./${SCRIPT_NAME}.sh
+    code ./${SCRIPT_NAME}.sh
+}
 
 # Apt
 alias i='sudo nala install'
 alias upd='sudo nala update'
 alias upg='sudo nala upgrade --update'
 
-alias cs="create_script"
-
-
+# Docker
 alias dbp="docker_build_publish"
+function docker_build_publish() {
+    local REGISTRY_URL=${1}
+    local IMAGE_NAME=${2}
+    local TAG=${3}
+    local DOCKER_FILE=${4:-"Dockerfile"}
+
+    docker build . -f ${DOCKER_FILE} -t ${IMAGE_NAME}:${TAG}
+    docker tag ${IMAGE_NAME}:${TAG} ${REGISTRY_URL}:${TAG}
+    docker push ${REGISTRY_URL}:${TAG}
+}
 
 # VPN
-alias nrd='nordvpn
-'
+alias nrd='nordvpn'
+function nordvpn_connect() {
+    nordvpn set technology nordlynx
+    nordvpn set lan-discovery enable
 
-alias nrdc='nordvpn_connect_city'
-
+    nordvpn connect "${1}"
+}
+alias nrdc='nordvpn_connect'
 alias nrdd='nordvpn d'
 alias nrds='nordvpn status'
-
 alias nrdcp="nordvpn_connect_public"
+function nordvpn_connect_public() {
+    nordvpn set technology openvpn
+    nordvpn set lan-discovery disable
+
+    nordvpn connect "${1}"
+}
 
 alias wgq='wg-quick'
 alias wguh='sudo wg-quick up home'
