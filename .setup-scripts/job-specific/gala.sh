@@ -1,9 +1,14 @@
 #!/bin/bash
 
-sudo apt update
+sudo nala update && sudo nala upgrade -y
 
 ~/.setup-scripts/apt/lens.sh
 ~/.setup-scripts/apt/tailscale.sh
+
+sudo nala install -y \
+lens \
+tailscale
+
 ~/.setup-scripts/apt/slack.sh
 ~/.setup-scripts/other-installs/kubectl.sh
 ~/.setup-scripts/other-installs/aws-cli.sh

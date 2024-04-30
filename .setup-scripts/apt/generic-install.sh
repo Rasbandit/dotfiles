@@ -2,11 +2,15 @@
 
 # Add Repositories
 sudo add-apt-repository multiverse -y
+sudo add-apt-repository universe -y
+sudo add-apt-repository ppa:appimagelauncher-team/stable
 ~/.setup-scripts/apt/1pass.sh
 ~/.setup-scripts/apt/dbeaver.sh
 ~/.setup-scripts/apt/insomnia.sh
 ~/.setup-scripts/apt/signal.sh
 ~/.setup-scripts/apt/spotify.sh
+~/.setup-scripts/apt/vivaldi.sh
+~/.setup-scripts/apt/vscode.sh
 
 sudo nala update
 
@@ -46,7 +50,6 @@ gcc \
 make \
 adb \
 insomnia \
-lens \
 install \
 qemu-kvm \
 qemu-system \
@@ -62,7 +65,11 @@ virt-manager \
 signal-desktop \
 spotify-client \
 steam \
-tailscale
+vivaldi-stable \
+code \
+libfuse2 \
+appimagelauncher \
+software-properties-common
 
 sudo nala remove nautalis
 
@@ -79,14 +86,12 @@ sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 ~/.setup-scripts/apt/exodus.sh
 ~/.setup-scripts/apt/ledger.sh
 ~/.setup-scripts/apt/steam.sh
-~/.setup-scripts/apt/vivaldi.sh
-~/.setup-scripts/apt/vscode.sh
 ~/.setup-scripts/apt/nodejs.sh
 ~/.setup-scripts/apt/obsidian.sh
-~/.setup-scripts/apt/alacrity.sh
 ~/.setup-scripts/apt/zoxide.sh
 ~/.setup-scripts/apt/qumu.sh
 ~/.setup-scripts/other-installs/starship.sh
+~/.setup-scripts/other-installs/vs-code-dracula.sh
 
 ## Wireguard auto pull conf and keys files
 ## terraform
