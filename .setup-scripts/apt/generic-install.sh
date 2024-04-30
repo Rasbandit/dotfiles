@@ -68,7 +68,9 @@ code \
 libfuse2 \
 appimagelauncher \
 software-properties-common \
-speedtest-cli
+speedtest-cli \
+tlp \
+tlp-rdw
 
 sudo nala remove nautalis
 
