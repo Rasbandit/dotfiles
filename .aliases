@@ -1,8 +1,9 @@
 # File system aliases
-alias ll='ls -AlF'
-alias la='ls -A'
-alias l='ls -CF'
-alias ldir='ls -d */'
+alias ls='exa'
+alias ll='exa -AlF'
+alias la='exa -A'
+alias l='exa -CF'
+alias ldir='exa -d */'
 alias sctl='systemctl'
 alias edit_aliases='code ~/.aliases'
 alias edit_aliases='code ~/.config/starship.toml'

@@ -23,7 +23,8 @@ tlp-rdw \
 smartmontools \
 vainfo \
 ulauncher \
-gnome-startup-applications
+gnome-startup-applications \
+exa
 
 sudo apt remove nautalis 
 
