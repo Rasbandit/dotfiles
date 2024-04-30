@@ -6,6 +6,10 @@ sudo apt install nala -y
 
 sudo nala fetch --https-only --auto --non-free -y
 sudo nala upgrade -y
+sudo nala install -y \
+software-properties-common \
+apt-transport-https \
+wget
 
 ~/.setup-scripts/apt/generic-install.sh
 

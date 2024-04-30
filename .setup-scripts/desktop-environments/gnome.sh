@@ -3,7 +3,7 @@
 pip3 install --upgrade gnome-extensions-cli --break-system-packages
 
 #Pano Requirements
-sudo apt install gir1.2-gda-5.0 gir1.2-gsound-1.0 -y
+sudo nala install gir1.2-gda-5.0 gir1.2-gsound-1.0 -y
 
 gnome-extensions-cli install \
 blur-my-shell@aunetx \
