@@ -2,10 +2,9 @@
 
 sudo apt update
 
-sudo apt install flatpak
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo apt install nala -y
 
-sudo apt-get install gedit dbus-x11 -y
+sudo nala fetch --https-only --auto --non-free
 
 ~/.setup-scripts/apt/generic-install.sh
 

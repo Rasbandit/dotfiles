@@ -27,7 +27,12 @@ gnome-startup-applications \
 exa \
 bat \
 ripgrep \
-btop
+btop \
+gedit \
+flatpak
+
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 
 sudo apt remove nautalis 
 

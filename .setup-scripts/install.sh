@@ -2,6 +2,8 @@
 
 touch ~/.bash_secrets
 
+./other-installs/fonts.sh
+
 OS_INFO=$(cat /etc/os-release)
 
 OS=$(echo "$OS_INFO" | grep "^ID=" | cut -d= -f2)
