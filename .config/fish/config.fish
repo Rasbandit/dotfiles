@@ -12,9 +12,10 @@ end
 source ~/.aliases
 source ~/.config/fish/functions/general.fish
 
+set NVM_DIR "$HOME/.nvm"
 
-if test -f "$HOME/.bash_secrets_Gala Envars"
-    source "$HOME/.bash_secrets_Gala Envars"
+if test -f "$HOME/.config/fish/work_secrets"
+    source "$HOME/.config/fish/work_secrets"
 end
 
 starship init fish | source
