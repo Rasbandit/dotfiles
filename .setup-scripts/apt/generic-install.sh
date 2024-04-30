@@ -1,9 +1,12 @@
 #!/bin/bash
 
+# Add Repositories
 sudo add-apt-repository multiverse -y
-sudo apt update && sudo apt upgrade 
+~/.setup-scripts/apt/1pass.sh
 
-sudo apt install -y \
+sudo nala update
+
+sudo nala install -y \
 curl \
 default-jdk \
 jq \
@@ -29,12 +32,15 @@ bat \
 ripgrep \
 btop \
 gedit \
-flatpak
+flatpak \
+1password-cli \
+1password \
+default-jdk \
+dbeaver-ce
+
+sudo nala remove nautalis
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-
-sudo apt remove nautalis 
 
 sudo flatpak install flathub com.todoist.Todoist -y
 sudo flatpak install flathub com.discordapp.Discord -y
@@ -43,7 +49,6 @@ sudo flatpak install flathub com.github.d4nj1.tlpui
 
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 ~/.setup-scripts/apt/droidcam.sh
-~/.setup-scripts/apt/1pass.sh
 ~/.setup-scripts/apt/zoom.sh
 ~/.setup-scripts/apt/signal.sh
 ~/.setup-scripts/apt/exodus.sh

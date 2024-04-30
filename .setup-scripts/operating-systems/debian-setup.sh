@@ -4,7 +4,8 @@ sudo apt update
 
 sudo apt install nala -y
 
-sudo nala fetch --https-only --auto --non-free
+sudo nala fetch --https-only --auto --non-free -y
+sudo nala upgrade -y
 
 ~/.setup-scripts/apt/generic-install.sh
 
