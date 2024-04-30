@@ -11,6 +11,7 @@ alias cdh='cd ~'
 alias c="clear"
 alias rm='rm -I --preserve-root'
 alias cdw="cd ~/Documents/work"
+alias rg="grep"
 
 alias cat='batcat'
 
