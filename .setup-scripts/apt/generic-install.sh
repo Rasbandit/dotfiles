@@ -26,7 +26,8 @@ ulauncher \
 gnome-startup-applications \
 exa \
 bat \
-ripgrep
+ripgrep \
+btop
 
 sudo apt remove nautalis 
 
