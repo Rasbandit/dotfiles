@@ -12,9 +12,7 @@ sudo add-apt-repository ppa:appimagelauncher-team/stable
 ~/.setup-scripts/apt/vivaldi.sh
 ~/.setup-scripts/apt/vscode.sh
 
-sudo nala update
-
-sudo nala install -y \
+sudo nala install -y --autoremove --update \
 curl \
 default-jdk \
 jq \
