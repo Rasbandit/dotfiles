@@ -96,6 +96,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 if [ -f ~/.aliases ]; then
     . ~/.aliases
     . ~/.bash_functions
@@ -138,4 +140,3 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(zoxide init bash)"
 eval "$(starship init bash)"
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
