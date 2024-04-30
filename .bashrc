@@ -96,15 +96,16 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+    . ~/.bash_functions
 fi
 
 if [ -f ~/.bash_secrets ]; then
     . ~/.bash_secrets
 fi
 
-if [ -f ~/.bash_work ]; then
+if [ -f ~/.work ]; then
     . ~/.bash_work
 fi
 
