@@ -21,7 +21,7 @@ if [ -n "$asset_url" ]; then
     wget -O "obsidian.deb" "$asset_url"
     echo "Download complete."
 
-    sudo apt install ./obsidian.deb -y
+    sudo nala install ./obsidian.deb -y
 
     rm ./obsidian.deb
 else
