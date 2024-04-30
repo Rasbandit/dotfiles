@@ -18,5 +18,6 @@ end
 
 zoxide init fish | source
 starship init fish | source
+fzf --fish | source
 
 alias cd='z'
