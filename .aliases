@@ -1,9 +1,8 @@
 # File system aliases
 alias ls='exa'
-alias ll='exa -AlF'
-alias la='exa -A'
-alias l='exa -CF'
 alias ldir='exa -d */'
+alias ll='exa -alFhg --icons --group-directories-first'
+alias lld='exa -alFD'
 alias sctl='systemctl'
 alias edit_aliases='code ~/.aliases'
 alias edit_aliases='code ~/.config/starship.toml'
@@ -43,6 +42,7 @@ alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 alias sbrc='source ~/.bashrc'
 alias edit_bashrc='code ~/.bashrc'
 alias edit_history='code ~/.bash_history'
+alias edit_fish='code ~/.config/fish'
 
 # Apt
 alias i='sudo apt install'
