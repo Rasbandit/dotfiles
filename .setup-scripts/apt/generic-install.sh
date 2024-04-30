@@ -24,7 +24,8 @@ smartmontools \
 vainfo \
 ulauncher \
 gnome-startup-applications \
-exa
+exa \
+bat
 
 sudo apt remove nautalis 
 

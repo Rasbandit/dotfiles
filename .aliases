@@ -12,6 +12,8 @@ alias c="clear"
 alias rm='rm -I --preserve-root'
 alias cdw="cd ~/Documents/work"
 
+alias cat='batcat'
+
 # Generic
 alias e='echo'
 
