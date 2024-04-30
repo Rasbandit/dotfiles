@@ -16,9 +16,7 @@ if test -f "$HOME/.config/fish/work_secrets"
     source "$HOME/.config/fish/work_secrets"
 end
 
-# ~/.config/fish/config.fish
-# You must call it on initialization or listening to directory switching won't work
-# load_nvm > /dev/stderr
-
 zoxide init fish | source
 starship init fish | source
+
+alias cd='z'

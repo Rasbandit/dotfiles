@@ -25,7 +25,8 @@ vainfo \
 ulauncher \
 gnome-startup-applications \
 exa \
-bat
+bat \
+fzf
 
 sudo apt remove nautalis 
 
