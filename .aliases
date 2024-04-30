@@ -49,9 +49,9 @@ alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 alias sbrc='source ~/.bashrc'
 
 # Apt
-alias i='sudo apt install'
-alias upd='sudo apt update'
-alias upg='upd && sudo apt upgrade'
+alias i='sudo nala install'
+alias upd='sudo nala update'
+alias upg='sudo nala upgrade --update'
 
 alias cs="create_script"
 

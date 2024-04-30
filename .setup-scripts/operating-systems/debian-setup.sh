@@ -4,6 +4,8 @@ echo "deb [arch=amd64,arm64,armhf] http://deb.volian.org/volian/ scar main" | su
 wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
 sudo apt update && sudo apt install nala -y
 
+sudo apt dist-upgrade
+
 sudo nala fetch --https-only --auto --non-free -y
 sudo nala upgrade -y
 sudo nala install -y \

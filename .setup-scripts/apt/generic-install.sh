@@ -67,7 +67,8 @@ vivaldi-stable \
 code \
 libfuse2 \
 appimagelauncher \
-software-properties-common
+software-properties-common \
+speedtest-cli
 
 sudo nala remove nautalis
 
