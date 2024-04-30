@@ -48,6 +48,8 @@ sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 ~/.setup-scripts/apt/rofi.sh
 ~/.setup-scripts/apt/nodejs.sh
 ~/.setup-scripts/apt/obsidian.sh
+~/.setup-scripts/apt/alacrity.sh
+~/.setup-scripts/apt/fish.sh
 ~/.setup-scripts/other-installs/starship.sh
 
 ## Wireguard auto pull conf and keys files
