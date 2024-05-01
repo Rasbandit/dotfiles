@@ -106,7 +106,7 @@ if [ -f ~/.bash_secrets ]; then
     . ~/.bash_secrets
 fi
 
-if [ -f ~/.work ]; then
+if [ -f ~/.bash_work ]; then
     . ~/.bash_work
 fi
 
