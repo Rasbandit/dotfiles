@@ -1,6 +1,4 @@
 [window]
-# opacity = 0.95
-blur = true
 dynamic_title = true
 
 [scrolling]
@@ -49,8 +47,3 @@ bright.blue = "#aa99ff"
 bright.magenta = "#ff99cc"
 bright.cyan = "#99ffee"
 bright.white = "#ffffff"
-
-
-# arcticicestudio/nord-vim
-# export FZF_DEFAULT_OPTS='--color=bg+:#454158,bg:#22212c,spinner:#9580ff,hl:#454158,fg:#f8f8f2,header:#454158,info:#9580ff,pointer:#9580ff,marker:#9580ff,fg+:#f8f8f2,prompt:#9580ff,hl+:#9580ff'
-

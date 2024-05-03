@@ -45,6 +45,8 @@ esac
 # should be on the output of commands, not on the prompt
 #force_color_prompt=yes
 
+export FZF_DEFAULT_OPTS='--color=bg+:#454158,bg:#22212c,spinner:#9580ff,hl:#aa99ff,fg:#f8f8f2,header:#454158,info:#9580ff,pointer:#9580ff,marker:#9580ff,fg+:#ffffff,prompt:#9580ff,hl+:#9580ff'
+
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
         # We have color support; assume it's compliant with Ecma-48

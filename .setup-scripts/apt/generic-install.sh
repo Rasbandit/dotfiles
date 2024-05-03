@@ -72,6 +72,8 @@ speedtest-cli \
 tlp \
 tlp-rdw
 
+cargo install alacritty
+
 sudo nala remove nautalis
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
