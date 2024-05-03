@@ -1,0 +1,51 @@
+[window]
+# opacity = 0.95
+blur = true
+dynamic_title = true
+
+[scrolling]
+history = 10000
+multiplier = 2
+
+[cursor]
+style.shape = "Block" 
+style.blinking = "On"
+unfocused_hollow = true
+
+[font]
+normal.family = "MonoLisa Nerd Font"
+bold.family = "MonoLisa Nerd Font Medium"
+italic.family = "MonoLisa Nerd Font Italic"
+bold_italic.family = "MonoLisa Nerd Font Medium Italic"
+
+size = 13.0
+
+[colors]
+primary.background = "#22212c"
+primary.foreground = "#f8f8f2"
+primary.dim_foreground = "#9a9a9a"
+primary.bright_foreground = "#ffffff"
+
+cursor.text = "#454158"
+cursor.cursor = "#f8f8f2"
+
+selection.text = "#f8f8f2"
+selection.background = "#454158"
+
+normal.black = "#22212c"
+normal.red = "#ff9580"
+normal.green = "#8aff80"
+normal.yellow = "#ffff80"
+normal.blue = "#9580ff"
+normal.magenta = "#ff80bf"
+normal.cyan = "#80ffea"
+normal.white = "#f8f8f2"
+
+bright.black = "#22212c"
+bright.red = "#ffaa99"
+bright.green = "#a2ff99"
+bright.yellow = "#ffff99"
+bright.blue = "#aa99ff"
+bright.magenta = "#ff99cc"
+bright.cyan = "#99ffee"
+bright.white = "#ffffff"
