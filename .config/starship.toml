@@ -135,4 +135,4 @@ when = "wg show interfaces | grep -q . && exit 0 || exit 1"
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#8155AD"
-format = '[[  $time ](fg:#f8f8f2 bg:#8155AD)]($style)'
+format = '[[ $time ](fg:#f8f8f2 bg:#8155AD)]($style)'
