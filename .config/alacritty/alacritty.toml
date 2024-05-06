@@ -17,7 +17,7 @@ bold.family = "MonoLisa Nerd Font Medium"
 italic.family = "MonoLisa Nerd Font Italic"
 bold_italic.family = "MonoLisa Nerd Font Medium Italic"
 
-size = 13.0
+size = 12.0
 
 [colors]
 primary.background = "#22212c"

@@ -17,6 +17,7 @@ alias sctl='systemctl'
 # Edit Files/folders
 alias edit_aliases='code ~/.aliases'
 alias edit_starship='code ~/.config/starship.toml'
+alias edit_alacritty='code ~/.config/alacritty/alacritty.toml'
 alias edit_setup='code ~/.setup-scripts'
 alias edit_bashrc='code ~/.bashrc'
 alias edit_history='code ~/.bash_history'
