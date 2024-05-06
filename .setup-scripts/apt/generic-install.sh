@@ -70,7 +70,8 @@ appimagelauncher \
 software-properties-common \
 speedtest-cli \
 tlp \
-tlp-rdw
+tlp-rdw \
+docker
 
 cargo install alacritty
 
