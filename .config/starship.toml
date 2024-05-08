@@ -21,7 +21,7 @@ success_symbol = '[❯](#5BFF4C)'
 error_symbol = '[❯](#FF6A4C)'
 
 [directory]
-style = "bold fg:#090c0c bg:#9580FF"
+style = "fg:#090c0c bg:#9580FF"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
