@@ -12,6 +12,7 @@
   "developers.cliSharedLockState.enabled": true,
   "passwordGenerator.size.characters": 30,
   "passwordGenerator.includeSymbols": true,
+  "sshAgent.securityDisclosureOpen": true,
   "authTags": {
     "app.theme": "NJ+pOLroBkW4CG2Np4gS2oA0H3bneKzdsxXhW55iUF4",
     "developers.cliSharedLockState.enabled": "ax7gH92DULt6jKxJs936k3rRMehog/nTM3873S6bWxI",
@@ -21,6 +22,7 @@
     "security.authenticatedUnlock.requireAccountPasswordAfter": "eXZDNwUX4dIegqsPnsURerl+qxFKVdwE8tjCBRnssBU",
     "security.autolock.minutes": "RNE9go5I3+F9VJauPW95ZzVKG8GOTiuWcWsaaeWF/W8",
     "sshAgent.enabled": "YVsiuC/5bzyywhvUvW6pHyoUDzugRn02nAY1QU2wn3E",
+    "sshAgent.securityDisclosureOpen": "e+n9yBIw65R+MfZNnbB7KBMIr9JNrIypqjFKeA4ovP8",
     "sshAgent.sshAuthorizatonModel": "14yq2QgG4/5x/3OvOkd/weKmYmfZ4DMkfp+vxr8JAjs",
     "sshAgent.sshSessionDuration": "DxTMUqZfGqtujggJQdoXnjTv1+B//X6UetdNVbmoJ1c",
     "sshAgent.storeKeyTitles": "ekVT9Rb5O50e8uvXzunjg91hMGHWMwJEE/Dd0bPzYFM",
