@@ -11,3 +11,7 @@
 
 [commit]
   gpgsign = true
+[alias]
+	st = status -s
+	sta = status
+	pr = pull --rebase
