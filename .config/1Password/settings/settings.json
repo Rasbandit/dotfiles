@@ -13,8 +13,10 @@
   "passwordGenerator.size.characters": 39,
   "passwordGenerator.includeSymbols": true,
   "sshAgent.securityDisclosureOpen": true,
+  "app.zoomLevel": 100,
   "authTags": {
     "app.theme": "NJ+pOLroBkW4CG2Np4gS2oA0H3bneKzdsxXhW55iUF4",
+    "app.zoomLevel": "1PtxKEFFEcHkMqu05nH7IMg6po6KyYtflSrh8rknhL0",
     "developers.cliSharedLockState.enabled": "ax7gH92DULt6jKxJs936k3rRMehog/nTM3873S6bWxI",
     "passwordGenerator.includeSymbols": "BlylqVrFZOG9YnbthFypJSjunpuadDHMH+qOsGX7xQU",
     "passwordGenerator.size.characters": "8uIPuXlnH+0EETMkpm4TAvkWdFQPa5EdP3dUOktXGgc",
