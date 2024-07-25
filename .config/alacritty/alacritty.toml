@@ -19,32 +19,78 @@ bold_italic.family = "MonoLisa Nerd Font Medium Italic"
 
 size = 12.0
 
-[colors]
-primary.background = "#22212c"
-primary.foreground = "#f8f8f2"
-primary.dim_foreground = "#9a9a9a"
-primary.bright_foreground = "#ffffff"
+[colors.primary]
+background = "#22212C"           # &Background
+foreground = "#F8F8F2"           # &Foreground
+dim_foreground = "#7970A9"       # &AnsiColor8
+bright_foreground = "#F8F8F2"    # &AnsiColor7
 
-cursor.text = "#454158"
-cursor.cursor = "#f8f8f2"
+[colors.cursor]
+text = "#22212C"                 # &Background
+cursor = "#E67373"               # &FunctionalRed
 
-selection.text = "#f8f8f2"
-selection.background = "#454158"
+[colors.vi_mode_cursor]
+text = "#22212C"                 # &Background
+cursor = "#73ECE5"               # &FunctionalCyan
 
-normal.black = "#22212c"
-normal.red = "#ff9580"
-normal.green = "#8aff80"
-normal.yellow = "#ffff80"
-normal.blue = "#9580ff"
-normal.magenta = "#ff80bf"
-normal.cyan = "#80ffea"
-normal.white = "#f8f8f2"
+[colors.search.matches]
+foreground = "#22212C"           # &Background
+background = "#7970A9"           # &AnsiColor8
 
-bright.black = "#22212c"
-bright.red = "#ffaa99"
-bright.green = "#a2ff99"
-bright.yellow = "#ffff99"
-bright.blue = "#aa99ff"
-bright.magenta = "#ff99cc"
-bright.cyan = "#99ffee"
-bright.white = "#ffffff"
+[colors.search.focused_match]
+foreground = "#22212C"           # &Background
+background = "#79E96D"           # &FunctionalGreen
+
+[colors.footer_bar]
+foreground = "#22212C"           # &Background
+background = "#7970A9"           # &AnsiColor8
+
+[colors.hints.start]
+foreground = "#22212C"           # &Background
+background = "#FFCA80"           # &Orange
+
+[colors.hints.end]
+foreground = "#22212C"           # &Background
+background = "#7970A9"           # &AnsiColor8
+
+[colors.selection]
+text = "#22212C"                 # &Background
+background = "#E67373"           # &FunctionalRed
+
+[colors.normal]
+black = "#21222C"                # &AnsiColor0
+red = "#FF9580"                  # &AnsiColor1
+green = "#8AFF80"                # &AnsiColor2
+yellow = "#FFFF80"               # &AnsiColor3
+blue = "#9580FF"                 # &AnsiColor4
+magenta = "#FF80BF"              # &AnsiColor5
+cyan = "#80FFEA"                 # &AnsiColor6
+white = "#F8F8F2"                # &AnsiColor7
+
+[colors.bright]
+black = "#7970A9"                # &AnsiColor8
+red = "#FFBFB3"                  # &AnsiColor9
+green = "#B9FFB3"                # &AnsiColor10
+yellow = "#FFFFB3"               # &AnsiColor11
+blue = "#BFB3FF"                 # &AnsiColor12
+magenta = "#FFB3D9"              # &AnsiColor13
+cyan = "#B3FFF2"                 # &AnsiColor14
+white = "#FFFFFF"                # &AnsiColor15
+
+[colors.dim]
+black = "#21222C"                # &AnsiColor0
+red = "#FF9580"                  # &AnsiColor1
+green = "#8AFF80"                # &AnsiColor2
+yellow = "#FFFF80"               # &AnsiColor3
+blue = "#9580FF"                 # &AnsiColor4
+magenta = "#FF80BF"              # &AnsiColor5
+cyan = "#80FFEA"                 # &AnsiColor6
+white = "#F8F8F2"                # &AnsiColor7
+
+[[colors.indexed_colors]]
+index = 16
+color = "#FFCA80"                # &Orange
+
+[[colors.indexed_colors]]
+index = 17
+color = "#E67373"                # &FunctionalRed
