@@ -10,7 +10,7 @@
   "sshAgent.enabled": true,
   "sshAgent.sshSessionDuration": "infinite",
   "developers.cliSharedLockState.enabled": true,
-  "passwordGenerator.size.characters": 54,
+  "passwordGenerator.size.characters": 41,
   "passwordGenerator.includeSymbols": true,
   "sshAgent.securityDisclosureOpen": true,
   "app.zoomLevel": 100,
