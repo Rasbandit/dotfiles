@@ -20,3 +20,4 @@ aws sso login
 aws eks update-kubeconfig --name dev-chain-platform-eks
 aws eks update-kubeconfig --name stage-chain-platform-eks
 aws eks update-kubeconfig --name prod-chain-platform-eks
+aws eks update-kubeconfig --name chain-plt-ue1-tnt
