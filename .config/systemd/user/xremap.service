@@ -1,0 +1,14 @@
+[Unit]
+Description=Start xremap with custom configuration
+Documentation=https://github.com/xremap/xremap
+
+[Service]
+Type=simple
+Environment=PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/home/rasbandit/.cargo/bin
+Environment=DISPLAY=:0
+Environment=HOME=/home/rasbandit
+ExecStart=/home/rasbandit/.cargo/bin/xremap /home/rasbandit/.config/xremap/config.yml
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
