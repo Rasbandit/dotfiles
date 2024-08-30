@@ -1,6 +1,5 @@
 #!/bin/bash
 
-git clone git@github.com:jtroo/kanata.git
+git clone git@github.com:jtroo/kanata.git /tmp/kanata
 
-cd kanata
-cargo build
+cargo install kanata --path /tmp/kanata
