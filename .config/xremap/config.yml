@@ -9,5 +9,5 @@ modmap:
 keymap:
   - name: main # Optional
     remap:
-      SHIFT-CTRL-ALT-s:
+      shift-c-alt-s:
         launch: ["/bin/flameshot", "gui"]
