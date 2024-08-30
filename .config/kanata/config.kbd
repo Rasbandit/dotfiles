@@ -1,0 +1,29 @@
+(defsrc
+    caps esc
+)
+
+(defvirtualkeys
+  ;; Define some virtual keys that perform modifier actions
+  ctl lctl
+  sft lsft
+  alt lalt
+
+  ;; A virtual key that toggles all modifier virtual keys above
+  tal (multi
+        (on-press toggle-virtualkey ctl)
+        (on-press toggle-virtualkey sft)
+        (on-press toggle-virtualkey alt)
+      )
+)
+
+(defalias
+    tal (multi
+        (on-press press-vkey tal)
+        (on-release press-vkey tal)
+    )
+    esc-hyper (tap-hold 130 130 esc @tal)
+)
+
+(deflayer base
+    @esc-hyper caps
+)

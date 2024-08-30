@@ -71,7 +71,8 @@ software-properties-common \
 speedtest-cli \
 tlp \
 tlp-rdw \
-docker
+docker \
+flameshot
 
 cargo install alacritty
 
