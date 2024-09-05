@@ -152,6 +152,7 @@ x-scheme-handler/tel=Zoom.desktop
 text/plain=code.desktop
 application/xml=code.desktop
 application/octet-stream=code.desktop
+x-scheme-handler/discord-622143930900807680=discord-622143930900807680.desktop
 
 [Added Associations]
 application/xhtml+xml=firefox_firefox.desktop;firefox.desktop;
