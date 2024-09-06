@@ -5,9 +5,3 @@ modmap:
         held: [leftctrl, leftshift, leftalt] # Required, also accepts arrays
         alone: esc # Required, also accepts arrays
         alone_timeout_millis: 160 # Optional
-
-keymap:
-  - name: main # Optional
-    remap:
-      shift-c-alt-s:
-        launch: ["/bin/flameshot", "gui"]

@@ -8,7 +8,7 @@ Environment=PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/home/rasbandit/.c
 Environment=DISPLAY=:0
 Environment=HOME=/home/rasbandit
 ExecStart=/home/rasbandit/.cargo/bin/xremap /home/rasbandit/.config/xremap/config.yml
-Restart=on-failure
+Restart=always
 
 [Install]
 WantedBy=default.target
