@@ -18,7 +18,7 @@ if [ $OS = "debian" ]; then
 fi
 
 script_path="/home/${USER}/.setup-scripts/cron-jobs/auto-add-push.sh"
-cron_job="* */1 * * * $script_path"
+cron_job="0 */1 * * * $script_path"
 echo "$cron_job" > /tmp/cron_job
 crontab /tmp/cron_job
 rm /tmp/cron_job
