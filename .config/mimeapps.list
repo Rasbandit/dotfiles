@@ -1,5 +1,5 @@
 [Default Applications]
-text/html=vivaldi-stable.desktop
+text/html=google-chrome.desktop
 x-scheme-handler/http=vivaldi-stable.desktop
 x-scheme-handler/https=vivaldi-stable.desktop
 x-scheme-handler/about=firefox_firefox.desktop
@@ -153,6 +153,7 @@ text/plain=code.desktop
 application/xml=code.desktop
 application/octet-stream=code.desktop
 x-scheme-handler/discord-622143930900807680=discord-622143930900807680.desktop
+x-scheme-handler/web+cardano=google-chrome.desktop
 
 [Added Associations]
 application/xhtml+xml=firefox_firefox.desktop;firefox.desktop;
