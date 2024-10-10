@@ -102,3 +102,7 @@ function nordvpn_connect_public() {
 alias wgq='wg-quick'
 alias wguh='sudo wg-quick up home'
 alias wgdh='sudo wg-quick down home'
+
+function cursor() {
+    /opt/cursor.appimage "$@" &
+}
