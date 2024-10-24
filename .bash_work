@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export VELERO_NAMESPACE=infrastructure-backup
+
 alias edit_work="code ~/.bash_work"
 
 
