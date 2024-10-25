@@ -144,3 +144,5 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(zoxide init bash)"
 eval "$(starship init bash)"
+
+[[ -s "/home/rasbandit/.gvm/scripts/gvm" ]] && source "/home/rasbandit/.gvm/scripts/gvm"
