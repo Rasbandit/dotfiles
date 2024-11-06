@@ -21,3 +21,4 @@ aws eks update-kubeconfig --name dev-chain-platform-eks
 aws eks update-kubeconfig --name stage-chain-platform-eks
 aws eks update-kubeconfig --name prod-chain-platform-eks
 aws eks update-kubeconfig --name chain-plt-ue1-tnt
+aws eks update-kubeconfig --name k8s-test-restoration-eks
