@@ -118,11 +118,11 @@ format = "[[ $symbol $output ](fg:#f8f8f2 bg:#4F3469)]($style)"
 style = "bg:#4F3469"
 when = "nordvpn status | grep -q 'Status: Connected' && exit 0 || exit 1"
 
-[custom.tailscale]
-symbol = "󰈺"
-format = "[[ $symbol Tailscale ](fg:#f8f8f2 bg:#4F3469)]($style)"
-style = "bg:#4F3469"
-when = "tailscale status | grep -q 'Tailscale is stopped.' && exit 1 || exit 0"
+# [custom.tailscale]
+# symbol = "󰈺"
+# format = "[[ $symbol Tailscale ](fg:#f8f8f2 bg:#4F3469)]($style)"
+# style = "bg:#4F3469"
+# when = "tailscale status | grep -q 'Tailscale is stopped.' && exit 1 || exit 0"
 
 [custom.wireguard]
 command = "wg show interfaces"
