@@ -154,6 +154,7 @@ application/xml=code.desktop
 application/octet-stream=code.desktop
 x-scheme-handler/discord-622143930900807680=discord-622143930900807680.desktop
 x-scheme-handler/web+cardano=google-chrome.desktop
+x-scheme-handler/nc=com.nextcloud.desktopclient.nextcloud.desktop
 
 [Added Associations]
 application/xhtml+xml=firefox_firefox.desktop;firefox.desktop;
