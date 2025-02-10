@@ -80,29 +80,6 @@ function docker_build_publish() {
     docker push ${REGISTRY_URL}:${TAG}
 }
 
-# VPN
-alias nrd='nordvpn'
-function nordvpn_connect() {
-    nordvpn set technology nordlynx
-    nordvpn set lan-discovery enable
-
-    nordvpn connect "${1}"
-}
-alias nrdc='nordvpn_connect'
-alias nrdd='nordvpn d'
-alias nrds='nordvpn status'
-alias nrdcp="nordvpn_connect_public"
-function nordvpn_connect_public() {
-    nordvpn set technology openvpn
-    nordvpn set lan-discovery disable
-
-    nordvpn connect "${1}"
-}
-
-alias wgq='wg-quick'
-alias wguh='sudo wg-quick up home'
-alias wgdh='sudo wg-quick down home'
-
 alias tsu-home='sudo tailscale up --accept-routes --exit-node=100.101.246.121 --exit-node-allow-lan-access --stateful-filtering'
 alias tsd='sudo tailscale down'
 alias tss='tailscale status'
