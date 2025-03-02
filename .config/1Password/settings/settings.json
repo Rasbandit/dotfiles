@@ -11,6 +11,7 @@
   "sshAgent.storeKeyTitles": true,
   "sshAgent.storeSshKeyTitlesResponseGiven": true,
   "sshAgent.enabled": true,
+  "security.autolock.onDeviceLock": true,
   "authTags": {
     "app.theme": "NJ+pOLroBkW4CG2Np4gS2oA0H3bneKzdsxXhW55iUF4",
     "app.zoomLevel": "1PtxKEFFEcHkMqu05nH7IMg6po6KyYtflSrh8rknhL0",
@@ -21,6 +22,7 @@
     "security.authenticatedUnlock.enabled": "vHJeTCcUBQ4yttbNtl8M9RmZTtw02oTNnzdXWfr6Eaw",
     "security.authenticatedUnlock.requireAccountPasswordAfter": "eXZDNwUX4dIegqsPnsURerl+qxFKVdwE8tjCBRnssBU",
     "security.autolock.minutes": "U3oEqth7e9wT48uY2zTLLXlvLwHd887m/hMPIfYy8/o",
+    "security.autolock.onDeviceLock": "Q/tJWDWOcEVzztzHHpqLmdn5QnjPHdi4TQ1XoL+YGcM",
     "sshAgent.enabled": "sz0QYYnqqhDWXPzSZnfuWSbV8z5OSK6JyN9J29uojUE",
     "sshAgent.securityDisclosureOpen": "e+n9yBIw65R+MfZNnbB7KBMIr9JNrIypqjFKeA4ovP8",
     "sshAgent.sshAuthorizatonModel": "14yq2QgG4/5x/3OvOkd/weKmYmfZ4DMkfp+vxr8JAjs",
