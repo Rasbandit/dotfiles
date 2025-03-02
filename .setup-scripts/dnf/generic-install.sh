@@ -20,7 +20,8 @@ eza \
 pip3 \
 nodejs \
 rust \
-cargo
+cargo \
+ripgrep
 
 sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
 sudo chmod +x /usr/bin/yq
@@ -32,11 +33,10 @@ flatpak install flathub org.signal.Signal -y
 
 ~/.setup-scripts/other-installs/droidcam.sh
 ~/.setup-scripts/dnf/1pass.sh
+~/.setup-scripts/dnf/steam.sh
 # ~/.setup-scripts/dnf/zoom.sh
 # ~/.setup-scripts/dnf/exodus.sh
 # ~/.setup-scripts/dnf/ledger.sh
-# ~/.setup-scripts/dnf/steam.sh
-# ~/.setup-scripts/dnf/discord.sh
 # ~/.setup-scripts/dnf/vivaldi.sh
 ~/.setup-scripts/dnf/vscode.sh
 ~/.setup-scripts/dnf/dbeaver.sh
