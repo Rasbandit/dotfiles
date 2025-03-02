@@ -13,7 +13,12 @@ gnome-tweaks \
 dconf-editor \
 htop \
 vivaldi-stable \
-install lpf-spotify-client
+lpf-spotify-client \
+fzf \
+zoxide \
+starship \
+exa \
+eza
 
 sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
 sudo chmod +x /usr/bin/yq
