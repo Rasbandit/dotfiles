@@ -1,15 +1,7 @@
 #!/bin/bash
 
-# VScode
-sudo apt install software-properties-common apt-transport-https wget -y
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" -y
-sudo apt update && sudo apt install code -y
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
 
-curl -L -o ~/Downloads/vs-code-dracula-theme.zip "https://drive.google.com/uc?export=download&id=1i8XaplBkeLiEUVYUYiH1MlAOCQf5Ohfm"
-unzip ~/Downloads/vs-code-dracula-theme.zip -d ~/Downloads
-
-code --install-extension ~/Downloads/visual-studio-code/dracula-pro.vsix
-
-rm ~/Downloads/vs-code-dracula-theme.zip
-rm -r ~/Downloads/visual-studio-code
+dnf check-update
+sudo dnf install code # or code-insiders
