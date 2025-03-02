@@ -12,8 +12,10 @@
   "sshAgent.storeSshKeyTitlesResponseGiven": true,
   "sshAgent.enabled": true,
   "security.autolock.onDeviceLock": true,
+  "app.useHardwareAcceleration": true,
   "authTags": {
     "app.theme": "NJ+pOLroBkW4CG2Np4gS2oA0H3bneKzdsxXhW55iUF4",
+    "app.useHardwareAcceleration": "YQapRG3PHFnQOFyp+9GnJNKL6FGJHqUj1J3z6oQSDss",
     "app.zoomLevel": "1PtxKEFFEcHkMqu05nH7IMg6po6KyYtflSrh8rknhL0",
     "browsers.extension.enabled": "Pa+SIFybHlyQObQ/B4E4vP5q6tZulxrIHulwl1E2Z18",
     "developers.cliSharedLockState.enabled": "zBRcKgkN8cCf8cWywjDUJWqXREubHT6Q23JLnUuVWPw",

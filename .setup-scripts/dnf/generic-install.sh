@@ -24,7 +24,9 @@ rust \
 cargo \
 ripgrep \
 ghostty \
-bat
+bat \
+btop \
+fastfetch
 
 sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
 curl -fsSL https://tailscale.com/install.sh | sh
