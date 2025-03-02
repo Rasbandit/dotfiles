@@ -1,8 +1,6 @@
 #!/bin/bash
 
-sudo apt update -y && sudo apt upgrade -y
-sudo dpkg --add-architecture i386 -y
-sudo add-apt-repository multiverse -y
-sudo apt-get dist-upgrade
-sudo apt update -y
-sudo apt install steam -y
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+sudo dnf config-manager --enable fedora-cisco-openh264 -y
+sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
+sudo dnf install steam -y

@@ -11,7 +11,7 @@ alias cd='z'
 alias c="clear"
 alias rm='rm -I --preserve-root'
 alias grep="rg"
-alias cat='batcat'
+alias cat='bat'
 alias sctl='systemctl'
 
 # Edit Files/folders
