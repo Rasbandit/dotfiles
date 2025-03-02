@@ -5,7 +5,7 @@ set -ex
 sudo dnf update
 
 sudo dnf install dnf-plugin-system-upgrade
-sudo dnf group install Multimedia -y
+# sudo dnf group install Multimedia -y
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 

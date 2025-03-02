@@ -1,13 +1,13 @@
 # File system aliases
-alias ls='exa'
-alias ldir='exa -d */'
-alias ll='exa -alFh --icons --group-directories-first'
-alias lld='exa -alFDh'
-# alias ..='z ..'
-# alias cdh='z ~'
-# alias ~='z ~'
-# alias cdw="z ~/Documents/work"
-# alias cd='z'
+alias ls='eza'
+alias ldir='eza -d */'
+alias ll='eza -alh --icons --group-directories-first'
+alias lld='eza -alDh'
+alias ..='z ..'
+alias cdh='z ~'
+alias ~='z ~'
+alias cdw="z ~/Documents/work"
+alias cd='z'
 alias c="clear"
 alias rm='rm -I --preserve-root'
 alias grep="rg"
@@ -62,10 +62,10 @@ function create_script() {
     code ./${SCRIPT_NAME}.sh
 }
 
-# Apt
-alias i='sudo nala install'
-alias upd='sudo nala update'
-alias upg='sudo nala upgrade --update'
+# dnf
+alias i='sudo dnf install'
+alias upd='sudo dnf update'
+alias upg='sudo dnf upgrade --update'
 
 # Docker
 alias dbp="docker_build_publish"

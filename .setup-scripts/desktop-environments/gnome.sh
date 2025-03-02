@@ -62,9 +62,9 @@ rm ~/.themes/dracula.tar.xz
 
 # Icon
 mkdir -p ~/.icons
-curl -L -o ~/.icons/papirus.tar.xz "https://drive.google.com/uc?export=download&id=1V3oPRCZwKLVXN24-T8vIV7ojecmpofUJ"
-tar -xf ~/.icons/papirus.tar.xz -C ~/.icons
-gsettings set org.gnome.desktop.interface icon-theme "Papirus"
+curl -L -o ~/.local/share/.icons/papirus.tar.xz "https://drive.google.com/uc?export=download&id=1V3oPRCZwKLVXN24-T8vIV7ojecmpofUJ"
+tar -xf ~/.local/share/.icons/papirus.tar.xz -C ~/.local/share/icons
+gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 rm ~/.icons/papirus.tar.xz
 
 # Appearance
