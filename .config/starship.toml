@@ -1,4 +1,5 @@
-format = """[$os](bg:#7970A9 fg:#090c0c)\
+format = """ 
+[$os](bg:#7970A9 fg:#090c0c)\
 [](bg:#9580FF fg:#7970A9)\
 $directory\
 [](fg:#9580FF bg:#9B66CF)\
