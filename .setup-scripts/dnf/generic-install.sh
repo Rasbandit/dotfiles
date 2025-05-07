@@ -40,6 +40,8 @@ flatpak install flathub org.signal.Signal -y
 ~/.setup-scripts/other-installs/droidcam.sh
 ~/.setup-scripts/dnf/1pass.sh
 ~/.setup-scripts/dnf/steam.sh
+~/.setup-scripts/dnf/espanso.sh
+
 # ~/.setup-scripts/dnf/exodus.sh
 # ~/.setup-scripts/dnf/ledger.sh
 ~/.setup-scripts/dnf/vscode.sh
