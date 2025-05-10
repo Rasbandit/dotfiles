@@ -23,6 +23,7 @@ alias edit_bashrc='code ~/.bashrc'
 alias edit_history='code ~/.bash_history'
 alias edit_functions='code ~/.bash_functions'
 alias edit_espanso='code ~/.config/espanso'
+alias edit_autocomplete='code ~/.config/espanso'
 alias sbrc='source ~/.bashrc'
 
 # Generic
