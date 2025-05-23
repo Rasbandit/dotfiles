@@ -2,7 +2,7 @@
 alias ls='eza'
 alias ldir='eza -d */'
 alias ll='eza -alh --icons --group-directories-first'
-alias lld='eza -alDh'
+alias lld='eza -alDh --icons'
 alias ..='z ..'
 alias cdh='z ~'
 alias ~='z ~'
@@ -43,7 +43,7 @@ alias push_config_changes='~/.setup-scripts/cron-jobs/auto-add-push.sh'
 alias drd_cam='~/.setup-scripts/apt/droidcam.sh'
 
 # NPM
-alias npmr='rm -rf node_modules package-lock.json; npm i'
+alias npmr='rm -rf ./node_modules package-lock.json; npm i'
 
 # git
 alias fuck='git reset --soft HEAD^'
@@ -86,8 +86,3 @@ function docker_build_publish() {
 alias tsu-home='sudo tailscale up --accept-routes --exit-node=100.82.250.90 --exit-node-allow-lan-access --stateful-filtering'
 alias tsd='sudo tailscale down'
 alias tss='tailscale status'
-
-function cursor() {
-    /opt/cursor.appimage "$@" &
-}
-
