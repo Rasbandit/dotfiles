@@ -1,9 +1,12 @@
 # File system aliases
 alias ls='eza'
+alias lt='eza -alh -s=size'
 alias ldir='eza -d */'
 alias ll='eza -alh --icons --group-directories-first'
 alias lld='eza -alDh --icons'
 alias ..='z ..'
+alias ...='z ../..'
+alias ....='z ../../..'
 alias cdh='z ~'
 alias ~='z ~'
 alias cdw="z ~/Documents/work"
@@ -13,6 +16,11 @@ alias rm='rm -I --preserve-root'
 alias grep="rg"
 alias cat='bat'
 alias sctl='systemctl'
+alias mkdir='mkdir -pv'
+alias diff='colordiff'
+alias mount='mount |column -t'
+alias h='history'
+alias j='jobs -l'
 
 # Edit Files/folders
 alias edit_aliases='code ~/.aliases'
@@ -52,6 +60,29 @@ alias fuck='git reset --soft HEAD^'
 alias pls='sudo $(history -p !!)'
 
 # Utils
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+alias ports='netstat -tulanp'
+
+alias df='df -H'
+alias du='du -ch'
+
+## pass options to free ##
+alias meminfo='free -m -l -t -h'
+ 
+## get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+ 
+## get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+ 
+## Get server cpu info ##
+alias cpuinfo='lscpu'
+
 alias extip='curl icanhazip.com'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
 
