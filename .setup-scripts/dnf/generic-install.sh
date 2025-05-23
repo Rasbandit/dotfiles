@@ -36,6 +36,7 @@ flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub org.videolan.VLC -y
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub org.signal.Signal -y
+flatpak install flathub md.obsidian.Obsidian -y
 
 ~/.setup-scripts/other-installs/droidcam.sh
 ~/.setup-scripts/dnf/1pass.sh
