@@ -42,7 +42,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = dracula
+theme = dark:dracula,light:
 window-decoration = auto
 background-opacity = 0.97
 background-blur = 30
