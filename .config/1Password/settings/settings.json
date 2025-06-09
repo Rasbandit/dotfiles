@@ -2,7 +2,7 @@
   "version": 1,
   "sshAgent.securityDisclosureOpen": true,
   "app.zoomLevel": 100,
-  "app.theme": "dark",
+  "app.theme": "system",
   "security.authenticatedUnlock.requireAccountPasswordAfter": "\"thirty-days\"",
   "browsers.extension.enabled": true,
   "security.authenticatedUnlock.enabled": true,
@@ -16,7 +16,7 @@
   "passwordGenerator.includeSymbols": true,
   "passwordGenerator.size.characters": 20,
   "authTags": {
-    "app.theme": "NJ+pOLroBkW4CG2Np4gS2oA0H3bneKzdsxXhW55iUF4",
+    "app.theme": "n5e8Q7mh1zzRyLARxG0suUr9h4bPhf0+OzrMnAFfRI0",
     "app.useHardwareAcceleration": "YQapRG3PHFnQOFyp+9GnJNKL6FGJHqUj1J3z6oQSDss",
     "app.zoomLevel": "1PtxKEFFEcHkMqu05nH7IMg6po6KyYtflSrh8rknhL0",
     "browsers.extension.enabled": "Pa+SIFybHlyQObQ/B4E4vP5q6tZulxrIHulwl1E2Z18",
