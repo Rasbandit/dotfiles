@@ -100,7 +100,7 @@ matches:
   - name: date
     type: date
     params:
-      format: "%m/%d/%y"
+      format: "%m-%d-%y"
 
 - trigger: :eudate
   replace: "{{date}}"
@@ -108,7 +108,7 @@ matches:
   - name: date
     type: date
     params:
-      format: "%d/%m/%y"
+      format: "%d-%m-%y"
 
 - trigger: :sortdate
   replace: "{{date}}"
@@ -116,7 +116,7 @@ matches:
   - name: date
     type: date
     params:
-      format: "%y/%m/%d"
+      format: "%Y-%m-%d"
       
 # Outputs the current time (24hr)
 - trigger: :time
