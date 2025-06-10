@@ -110,7 +110,7 @@ matches:
     params:
       format: "%d-%m-%Y"
 
-- trigger: :sortdate
+- trigger: :sdate
   replace: "{{date}}"
   vars:
   - name: date
@@ -137,13 +137,13 @@ matches:
       format: "%B %Y"
       
 # Easily inputs ASCII emojis from a dropdown
-- trigger: :lenny
-  form: "{{smileys}}"
+- trigger: :faces
+  form: "[[smileys]]"
   form_fields:
     smileys:
       type: choice
       values:
-      - '¯\\_(ツ)_/¯'
+      - '¯\_(ツ)_/¯'
       - '(╯°□°）╯︵ ┻━┻'
       - '( ͡ಠ ʖ̯ ͡ಠ)'
       - '☉ ‿ ⚆'
@@ -156,7 +156,7 @@ matches:
       - 'ツ'
       
 # Personal email notes
-- trigger: :Bw
+- trigger: :bw
   replace: "Best wishes,\nTodd\n"
   
 # Outputs git commit command, with cursor in the message block
