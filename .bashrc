@@ -142,12 +142,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
-if [ "$GTK_THEME_MODE" = "dark" ]; then
-    ln -sf ~/.config/starship-dark.toml ~/.config/starship.toml
-else
-    ln -sf ~/.config/starship-light.toml ~/.config/starship.toml
-fi
-
 eval "$(zoxide init bash)"
 eval "$(starship init bash)"
 
