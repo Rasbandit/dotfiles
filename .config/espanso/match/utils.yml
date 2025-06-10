@@ -100,7 +100,7 @@ matches:
   - name: date
     type: date
     params:
-      format: "%m-%d-%y"
+      format: "%m-%d-%Y"
 
 - trigger: :eudate
   replace: "{{date}}"
@@ -108,7 +108,7 @@ matches:
   - name: date
     type: date
     params:
-      format: "%d-%m-%y"
+      format: "%d-%m-%Y"
 
 - trigger: :sortdate
   replace: "{{date}}"
@@ -155,23 +155,9 @@ matches:
       - '⤜(*﹏*)⤏'
       - 'ツ'
       
-# Ouputs MIT License short text  
-- trigger: :mit-short
-  replace: "Licensed under MIT X11, © Alicia Sykes {{year}}: https://aliciasykes.com"
-  vars: [{name: year, type: date, params: {format: "%Y"}}]
-
-# Outputs full MIT license text, from GitHub
-- trigger: :mit-long
-  replace: "{{output}}"
-  vars:
-  - name: output
-    type: shell
-    params:
-      cmd: "curl 'https://gist.githubusercontent.com/Lissy93/143d2ee01ccc5c052a17/raw/a8ac96cd15847a231931b561d95d2de47066fd33/LICENSE.MD'"
-      
 # Personal email notes
-- trigger: :kr
-  replace: "Kind Regards,\nAlicia\n"
+- trigger: :Bw
+  replace: "Best wishes,\nTodd\n"
   
 # Outputs git commit command, with cursor in the message block
 - trigger: :commit
