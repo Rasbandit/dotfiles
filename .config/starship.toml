@@ -1,18 +1,19 @@
 format = """ 
+[](fg:4)\
 [$os](bg:4 fg:0)\
-[](bg:12 fg:4)\
+[](bg:12 fg:4)\
 $directory\
-[](fg:12 bg:13)\
+[](fg:12 bg:13)\
 $git_branch\
 $git_status\
-[](fg:13 bg:2)\
+[](fg:13 bg:2)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:2 bg:14)\
+[](fg:2 bg:14)\
 $custom\
-[ ](fg:14)\
+[ ](fg:14)\
 $cmd_duration\
 \n$character"""
 
@@ -34,7 +35,8 @@ truncation_symbol = "…/"
 
 [cmd_duration]
 min_time = 3500
-format = '[$duration](3)'
+format = '[$duration](3 bold)'
+time_format = "%H:%M:%S%.3f"
 
 [os]
 format = "[[$symbol](bg:4 fg:0)]($style)"
@@ -52,7 +54,7 @@ CentOS = " "
 Debian = " "
 DragonFly = " "
 EndeavourOS = " "
-Fedora = "  "
+Fedora = " "
 FreeBSD = " "
 Garuda = " "
 Gentoo = "󰣨 "
@@ -126,6 +128,6 @@ when = "tailscale status | grep -q 'Tailscale is stopped.' && exit 1 || exit 0"
 
 [time]
 disabled = false
-time_format = "%R" # Hour:Minute Format
+time_format = "%.3f" # Hour:Minute Format
 style = "bg:1"
 format = '[[ $time ](fg:0 bg:1)]($style)'
