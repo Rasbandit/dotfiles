@@ -1271,3 +1271,6 @@ matches:
 - trigger: ok
   replace: OK
   word: true
+- trigger: wiht
+  replace: with
+  word: true

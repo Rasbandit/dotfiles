@@ -36,7 +36,6 @@ truncation_symbol = "…/"
 [cmd_duration]
 min_time = 3500
 format = '[$duration](3 bold)'
-time_format = "%H:%M:%S%.3f"
 
 [os]
 format = "[[$symbol](bg:4 fg:0)]($style)"
