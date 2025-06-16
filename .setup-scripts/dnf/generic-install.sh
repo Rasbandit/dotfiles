@@ -27,7 +27,11 @@ ghostty \
 bat \
 btop \
 fastfetch \
-colordiff
+colordiff \
+duf \
+fd \
+iotop \
+dog
 
 sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
 curl -fsSL https://tailscale.com/install.sh | sh
@@ -43,6 +47,7 @@ flatpak install flathub md.obsidian.Obsidian -y
 ~/.setup-scripts/dnf/1pass.sh
 ~/.setup-scripts/dnf/steam.sh
 ~/.setup-scripts/dnf/espanso.sh
+~/.setup-scripts/dnf/lazy-docker.sh
 
 # ~/.setup-scripts/dnf/exodus.sh
 # ~/.setup-scripts/dnf/ledger.sh
