@@ -1274,3 +1274,6 @@ matches:
 - trigger: wiht
   replace: with
   word: true
+- trigger: todd
+  replace: Todd
+  word: true
