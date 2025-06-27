@@ -6,5 +6,5 @@ video=1
 size=1920x1080
 confirm_close=1
 vertical_flip=1
-horizontal_flip=0
+horizontal_flip=1
 type=1
