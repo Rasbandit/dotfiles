@@ -31,8 +31,8 @@ elif [ "$LOCAL_COMMIT" = "$BASE_COMMIT" ]; then
     config pull --ff-only "$REMOTE_BRANCH"
 elif [ "$REMOTE_COMMIT" = "$BASE_COMMIT" ]; then
     echo "Local ahead; will push any new commits after staging."
-    # We'll handle the push after committing.
 else
+    notify-send "Dotfiles backup ERROR" "Branches have diverged! Manual intervention required."
     echo "Branches have diverged! Manual intervention required."
     exit 1
 fi
