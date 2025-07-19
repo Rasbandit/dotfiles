@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=evmapy
-Comment=Start evmapy in background
-Exec=/usr/local/bin/evmapy
-Icon=evmapy
-Terminal=false
-Type=Application
-Categories=Utility;
-X-GNOME-Autostart-Delay=5

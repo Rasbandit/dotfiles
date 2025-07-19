@@ -39,7 +39,7 @@ else
 fi
 
 # --- 2. Stage your dotfiles and config changes ---
-config add "$HOME/.setup-scripts/"* "$HOME/.config/autostart/"*
+config add "$HOME/.setup-scripts/"* "$HOME/.config/autostart-potentials/"*
 config add -u
 
 # --- 3. Commit if needed, then push (this will require SSH key unlock if needed) ---
