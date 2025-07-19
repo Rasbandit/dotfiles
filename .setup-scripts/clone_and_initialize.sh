@@ -18,7 +18,8 @@ fi;
 config checkout
 config config status.showUntrackedFiles no
 
-config remote set-url origin git@github.com:Rasbandit/dotfiles.git
+config remote set-url origin https://github.com/Rasbandit/dotfiles.git
+config remote set-url --push origin git@github.com:Rasbandit/dotfiles.git
 config push --set-upstream origin main
 
 $HOME/.setup-scripts/install.sh
