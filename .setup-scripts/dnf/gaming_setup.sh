@@ -37,3 +37,8 @@ sudo flatpak install org.gnome.World.PikaBackup -y
 # sudo python3 setup.py install
 
 # sudo sh -c 'echo SUBSYSTEM==\"usb\", ENV{DEVTYPE}==\"usb_device\", ATTRS{idVendor}==\"057e\", ATTRS{idProduct}==\"0337\", MODE=\"0666\" > /etc/udev/rules.d/51-gcadapter.rules;echo SUBSYSTEM==\"usb\", ENV{DEVTYPE}==\"usb_device\", ATTRS{idVendor}==\"2e8a\", ATTRS{idProduct}==\"102b\", MODE=\"0666\" > /etc/udev/rules.d/51-losslessadapter.rules;udevadm control --reload-rules'
+
+~/.setup-scripts/autostart-link.sh es-de.desktop
+~/.setup-scripts/autostart-link.sh org.gnome.World.PikaBackup.deskto
+~/.setup-scripts/autostart-link.sh sol.desktop
+~/.setup-scripts/autostart-link.sh es-de.desktop

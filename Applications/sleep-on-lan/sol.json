@@ -1,0 +1,51 @@
+{
+  "Listeners" : ["UDP:9000", "UDP:7000", "HTTP:8009" ],
+  "LogLevel" : "INFO",
+  "ExitIfAnyPortIsAlreadyUsed" : true,
+  "AvoidDualUDPSending" : {
+	  "Active": false,
+	  "Delay": "100ms"
+  },
+  "Commands" : [ 
+    {
+        "Operation" : "halt",
+        "Command" : "shutdown now"
+    },
+    {
+      "Operation" : "left",
+      "Command" : "xdotool key Left"
+    },
+    {
+      "Operation" : "up",
+      "Command" : "xdotool key Up"
+    },
+    {
+      "Operation" : "right",
+      "Command" : "xdotool key Right"
+    },
+    {
+      "Operation" : "down",
+      "Command" : "xdotool key Down"
+    },
+    {
+      "Operation" : "enter",
+      "Command" : "xdotool key Enter"
+    },
+    {
+      "Operation" : "back",
+      "Command" : "xdotool key BackSpace"
+    },
+    {
+      "Operation" : "back",
+      "Command" : "xdotool key BackSpace"
+    },
+    {
+      "Operation" : "esc",
+      "Command" : "xdotool key Escape"
+    },
+    {
+      "Operation" : "home",
+      "Command" : "/home/rasbandit/.evmapy/launch_ES-DE.sh &"
+    }
+  ]
+}

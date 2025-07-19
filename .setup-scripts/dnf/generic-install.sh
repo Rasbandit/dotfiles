@@ -51,3 +51,5 @@ if command -v ghostty >/dev/null 2>&1; then
     # Replace the following line with the command you want to run
     sudo dnf remove ptyxis
 fi
+
+~/.setup-scripts/autostart-link.sh 1password.desktop
