@@ -44,6 +44,6 @@
 
 theme = dark:dracula,light:alucard
 window-decoration = auto
-background-opacity = 0.98
-background-blur = 70
+background-opacity = 1
+background-blur = true
 window-theme = ghostty

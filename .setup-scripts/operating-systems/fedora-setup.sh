@@ -2,6 +2,11 @@
 
 set -ex
 
+echo "fastestmirror=true" | sudo tee -a /etc/dnf/dnf.conf
+echo "max_parallel_downloads=20" | sudo tee -a /etc/dnf/dnf.conf
+echo "installonly_limit=10" | sudo tee -a /etc/dnf/dnf.conf
+echo "deltarpm=true" | sudo tee -a /etc/dnf/dnf.conf
+
 sudo dnf update -y
 
 sudo dnf install dnf-plugin-system-upgrade

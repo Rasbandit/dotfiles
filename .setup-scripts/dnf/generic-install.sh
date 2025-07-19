@@ -45,3 +45,9 @@ flatpak install flathub com.spotify.Client -y
 ~/.setup-scripts/dnf/specific-apps/vscode.sh
 ~/.setup-scripts/other-installs/vs-code-dracula.sh
 ~/.setup-scripts/other-installs/starship.sh
+
+
+if command -v ghostty >/dev/null 2>&1; then
+    # Replace the following line with the command you want to run
+    sudo dnf remove ptyxis
+fi
