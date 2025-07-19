@@ -49,20 +49,19 @@ gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 # Theme
-mkdir -p ~/.themes
-curl -L -o ~/.themes/dracula.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1642717809/Dracula.tar.xz?response-content-disposition=attachment%3B%2520Dracula.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20240417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240417T100245Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=91b4516727bd39266a2817369a094ee2457de8d34fc5103a4469adca19250d5f"
-tar -xf ~/.themes/dracula.tar.xz -C ~/.themes
-gsettings set org.gnome.desktop.interface gtk-theme Dracula
-gsettings set org.gnome.desktop.wm.preferences theme Dracula
-gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
-rm ~/.themes/dracula.tar.xz
+# mkdir -p ~/.themes
+# curl -L -o ~/.themes/dracula.tar.xz "https://nextcloud.ras.band/public.php/dav/files/X57wi6dmwGYKc4A"
+# tar -xf ~/.themes/dracula.tar.xz -C ~/.themes
+# gsettings set org.gnome.desktop.interface gtk-theme Dracula
+# gsettings set org.gnome.desktop.wm.preferences theme Dracula
+# gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
+# rm ~/.themes/dracula.tar.xz
 
 # Icon
-mkdir -p ~/.icons
-curl -L -o ~/.local/share/.icons/papirus.tar.xz "https://drive.google.com/uc?export=download&id=1V3oPRCZwKLVXN24-T8vIV7ojecmpofUJ"
-tar -xf ~/.local/share/.icons/papirus.tar.xz -C ~/.local/share/icons
+curl -L -o ~/.local/share/icons/papirus.tar.xz "https://nextcloud.ras.band/public.php/dav/files/cEASEBKXN3Ag25e/?accept=tar"
+tar -xf ~/.local/share/icons/papirus.tar.xz -C ~/.local/share/icons
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
-rm ~/.icons/papirus.tar.xz
+rm ~/.local/share/icons/papirus.tar.xz
 
 # Appearance
 mkdir -p ~/Pictures/desktop-pictures
