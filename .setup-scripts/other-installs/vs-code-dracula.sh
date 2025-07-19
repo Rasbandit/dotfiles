@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -L -o ~/Downloads/vs-code-dracula-theme.zip "https://drive.google.com/uc?export=download&id=1i8XaplBkeLiEUVYUYiH1MlAOCQf5Ohfm"
+curl -L -o ~/Downloads/dracula-pro.vsix "https://nextcloud.ras.band/public.php/dav/files/gaBCyX3XeTbBKyF/?accept=zip"
 unzip ~/Downloads/vs-code-dracula-theme.zip -d ~/Downloads
 
 code --install-extension ~/Downloads/visual-studio-code/dracula-pro.vsix
