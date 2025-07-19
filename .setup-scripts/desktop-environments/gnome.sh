@@ -6,19 +6,15 @@ pip3 install --upgrade gnome-extensions-cli --break-system-packages
 sudo nala install gir1.2-gda-5.0 gir1.2-gsound-1.0 -y
 
 gnome-extensions-cli install \
-blur-my-shell@aunetx \
-appindicatorsupport@rgcjonas.gmail.com \
-Vitals@CoreCoding.com \
-pano@elhan.io \
-quick-settings-tweaks@qwreey
+blur-my-shell@aunetx 
 
 sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
-sudo cp ~/.local/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/schemas/org.gnome.shell.extensions.appindicator.gschema.xml /usr/share/glib-2.0/schemas/
-sudo cp ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com/schemas/org.gnome.shell.extensions.vitals.gschema.xml /usr/share/glib-2.0/schemas/
-sudo cp ~/.local/share/gnome-shell/extensions/pano@elhan.io/schemas/org.gnome.shell.extensions.pano.gschema.xml /usr/share/glib-2.0/schemas/
-sudo cp ~/.local/share/gnome-shell/extensions/quick-settings-tweaks@qwreey/schemas/org.gnome.shell.extensions.quick-settings-tweaks.gschema.xml /usr/share/glib-2.0/schemas/
+# sudo cp ~/.local/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/schemas/org.gnome.shell.extensions.appindicator.gschema.xml /usr/share/glib-2.0/schemas/
+# sudo cp ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com/schemas/org.gnome.shell.extensions.vitals.gschema.xml /usr/share/glib-2.0/schemas/
+# sudo cp ~/.local/share/gnome-shell/extensions/pano@elhan.io/schemas/org.gnome.shell.extensions.pano.gschema.xml /usr/share/glib-2.0/schemas/
+# sudo cp ~/.local/share/gnome-shell/extensions/quick-settings-tweaks@qwreey/schemas/org.gnome.shell.extensions.quick-settings-tweaks.gschema.xml /usr/share/glib-2.0/schemas/
 
-sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+# sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 
@@ -29,18 +25,17 @@ gsettings set org.gnome.shell.extensions.blur-my-shell color "(0.0, 0.0, 0.0, 0.
 gsettings set org.gnome.shell.extensions.blur-my-shell noise-amount 0.02
 
 # Vitals
-gsettings set org.gnome.shell.extensions.vitals hot-sensors "['_memory_usage_', '_processor_usage_', '__temperature_avg__', '_battery_time_left_']"
-gsettings set org.gnome.shell.extensions.vitals show-battery true
+# gsettings set org.gnome.shell.extensions.vitals hot-sensors "['_memory_usage_', '_processor_usage_', '__temperature_avg__', '_battery_time_left_']"
+# gsettings set org.gnome.shell.extensions.vitals show-battery true
 
 # Pano Clipboard manager
-gsettings set org.gnome.shell.extensions.pano send-notification-on-copy false
-gsettings set org.gnome.shell.extensions.pano play-audio-on-copy false
-gsettings set org.gnome.shell.extensions.pano keep-search-entry false
-gsettings set org.gnome.shell.extensions.pano history-length 100
+# gsettings set org.gnome.shell.extensions.pano send-notification-on-copy false
+# gsettings set org.gnome.shell.extensions.pano play-audio-on-copy false
+# gsettings set org.gnome.shell.extensions.pano keep-search-entry false
+# gsettings set org.gnome.shell.extensions.pano history-length 100
 
 # Quick Settings Tweaks
 gsettings set org.gnome.shell.extensions.quick-settings-tweaks output-show-selected true
-
 gsettings set org.gnome.shell.extensions.quick-settings-tweaks input-show-selected true
 
 # Default Apps
@@ -69,7 +64,7 @@ rm ~/.icons/papirus.tar.xz
 
 # Appearance
 mkdir -p ~/Pictures/desktop-pictures
-curl -L -o ~/Pictures/desktop-pictures/galaxy.jpg "https://drive.google.com/uc?export=download&id=1CwD_YmH7e1-pRLHsYy9DDBT_vV93v6rm"
+curl -L -o ~/Pictures/desktop-pictures/galaxy.jpg "https://nextcloud.ras.band/public.php/dav/files/XQfty9SAfLcHCse/?accept=zip"
 gsettings set org.gnome.desktop.background picture-uri "file:///home/rasbandit/Pictures/desktop-pictures/galaxy.jpg"
 gsettings set org.gnome.desktop.background picture-uri-dark "file:///home/rasbandit/Pictures/desktop-pictures/galaxy.jpg"
 gsettings set org.gnome.desktop.screensaver picture-uri "file:///home/rasbandit/Pictures/desktop-pictures/galaxy.jpg"
@@ -87,7 +82,7 @@ gsettings set org.gnome.desktop.peripherals.touchpad click-method 'fingers'
 # Keybaord
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'jp')]"
 gsettings set org.gnome.desktop.input-sources mru-sources "[('xkb', 'us')]"
-gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
+gsettings set org.gnome.desktop.input-sources xkb-options "['caps:escape_shifted_capslock']"
 
 # Sound
 gsettings set org.gnome.desktop.sound event-sounds false 
@@ -113,19 +108,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift
 gsettings set org.gnome.desktop.interface monospace-font-name 'MonoLisa Nerd Font Regular 13'
 
 # Nemo
-gsettings set org.nemo.preferences show-location-entry true
-gsettings set org.nemo.list-view default-visible-columns "['name', 'size', 'type', 'date_modified', 'date_created_with_time']"
-gsettings set org.nemo.preferences show-open-in-terminal-toolbar true
+# gsettings set org.nemo.preferences show-location-entry true
+# gsettings set org.nemo.list-view default-visible-columns "['name', 'size', 'type', 'date_modified', 'date_created_with_time']"
+# gsettings set org.nemo.preferences show-open-in-terminal-toolbar true
 
 # Search
 gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Software.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Contacts.desktop']"
 
-# Terminal
-profiles_list=$(dconf read /org/gnome/terminal/legacy/profiles:/list)
-profile_id=$(echo "$profiles_list" | grep -oP "\[.*?\]" | tr -d '[]' | awk '{print $1}')
-profile_id="${profile_id//\'}"
-
-dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/visible-name "'default'"
-~/.setup-scripts/desktop-environments/terminal-theme/install.sh -s Dracula -p default --install-dircolors
-dconf write /org/gnome/terminal/legacy/profiles:/:${profile_id}/audible-bell false
-dconf write /org/gnome/terminal/legacy/profiles:/:${profile_id} scrollback-unlimited true
