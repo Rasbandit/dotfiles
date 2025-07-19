@@ -8,7 +8,6 @@ sudo dnf install -y \
 curl \
 jq \
 pavucontrol \
-wireguard-tools \
 traceroute \
 gnome-tweaks \
 dconf-editor \

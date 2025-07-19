@@ -2,7 +2,7 @@
 
 set -ex
 
-sudo dnf update
+sudo dnf update -y
 
 sudo dnf install dnf-plugin-system-upgrade
 # sudo dnf group install Multimedia -y
