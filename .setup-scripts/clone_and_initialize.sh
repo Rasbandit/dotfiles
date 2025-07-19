@@ -7,7 +7,7 @@ function config {
 }
 
 mkdir -p .config-backup
-config checkout
+config checkout -f
 if [ $? = 0 ]; then
   echo "Checked out config.";
   else
