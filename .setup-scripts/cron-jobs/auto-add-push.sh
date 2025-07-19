@@ -18,6 +18,7 @@ config remote set-url origin https://github.com/Rasbandit/dotfiles.git
 config remote set-url --push origin git@github.com:Rasbandit/dotfiles.git
 
 # --- 1. Pull remote changes first (will not prompt for SSH unlock if repo is public) ---
+config pull
 config fetch origin +refs/heads/*:refs/remotes/origin/*
 
 LOCAL_COMMIT=$(config rev-parse "$LOCAL_BRANCH")
