@@ -11,9 +11,6 @@ quick-settings-tweaks@qwreey \
 caffeine@patapon.info
 
 sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
-# sudo cp ~/.local/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/schemas/org.gnome.shell.extensions.appindicator.gschema.xml /usr/share/glib-2.0/schemas/
-# sudo cp ~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com/schemas/org.gnome.shell.extensions.vitals.gschema.xml /usr/share/glib-2.0/schemas/
-# sudo cp ~/.local/share/gnome-shell/extensions/pano@elhan.io/schemas/org.gnome.shell.extensions.pano.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/quick-settings-tweaks@qwreey/schemas/org.gnome.shell.extensions.quick-settings-tweaks.gschema.xml /usr/share/glib-2.0/schemas/
 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
@@ -26,15 +23,6 @@ gsettings set org.gnome.shell.extensions.blur-my-shell brightness 0.7
 gsettings set org.gnome.shell.extensions.blur-my-shell color "(0.0, 0.0, 0.0, 0.0)"
 gsettings set org.gnome.shell.extensions.blur-my-shell noise-amount 0.02
 
-# Vitals
-# gsettings set org.gnome.shell.extensions.vitals hot-sensors "['_memory_usage_', '_processor_usage_', '__temperature_avg__', '_battery_time_left_']"
-# gsettings set org.gnome.shell.extensions.vitals show-battery true
-
-# Pano Clipboard manager
-# gsettings set org.gnome.shell.extensions.pano send-notification-on-copy false
-# gsettings set org.gnome.shell.extensions.pano play-audio-on-copy false
-# gsettings set org.gnome.shell.extensions.pano keep-search-entry false
-# gsettings set org.gnome.shell.extensions.pano history-length 100
 
 # Quick Settings Tweaks
 gsettings set org.gnome.shell.extensions.quick-settings-tweaks output-show-selected true
