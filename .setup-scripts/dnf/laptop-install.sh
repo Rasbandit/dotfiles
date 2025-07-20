@@ -10,3 +10,5 @@ flatpak install flathub org.signal.Signal -y
 # ~/.setup-scripts/dnf/specific-apps/ledger.sh
 ~/.setup-scripts/dnf/specific-apps/dbeaver.sh
 ~/.setup-scripts/dnf/specific-apps/espanso.sh
+
+~/.setup-scripts/autostart-link.sh signal-desktop.desktop

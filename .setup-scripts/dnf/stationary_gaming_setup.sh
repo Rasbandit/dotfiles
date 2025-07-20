@@ -3,7 +3,8 @@
 cd /home/rasbandit/Downloads
 
 echo "10.0.20.214:/mnt/user/gaming-desktop-backup    /mnt/backup    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/user/roms    /home/rasbandit/ES-DE/roms    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/user/es-de/roms    /home/rasbandit/ES-DE/roms    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "/home/rasbandit/local_steam   /home/rasbandit/ES-DE/roms/steam    none    bind    0    0" | sudo tee -a /etc/fstab
 
 sudo dnf copr enable lizardbyte/stable -y
 sudo dnf copr enable lizardbyte/beta -y
@@ -41,4 +42,6 @@ sudo flatpak install org.gnome.World.PikaBackup -y
 ~/.setup-scripts/autostart-link.sh es-de.desktop
 ~/.setup-scripts/autostart-link.sh org.gnome.World.PikaBackup.deskto
 ~/.setup-scripts/autostart-link.sh sol.desktop
-~/.setup-scripts/autostart-link.sh es-de.desktop
+~/.setup-scripts/autostart-link.sh steam.desktop
+~/.setup-scripts/autostart-link.sh discord.desktop
+~/.setup-scripts/autostart-link.sh sunshine.desktop
