@@ -27,7 +27,9 @@ colordiff \
 duf \
 fd \
 iotop \
-dog
+dog \
+langpacks-core-font-ja
+
 
 sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
 curl -fsSL https://tailscale.com/install.sh | sh
@@ -39,6 +41,7 @@ flatpak install flathub com.spotify.Client -y
 
 
 ~/.setup-scripts/dnf/specific-apps/1pass.sh
+~/.setup-scripts/dnf/specific-apps/japanese.sh
 ~/.setup-scripts/dnf/specific-apps/steam.sh
 ~/.setup-scripts/dnf/specific-apps/eza.sh
 

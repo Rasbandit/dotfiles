@@ -1277,3 +1277,6 @@ matches:
 - trigger: todd
   replace: Todd
   word: true
+- trigger: tr@
+  replace: todd.rasband@gmail.com
+  word: true

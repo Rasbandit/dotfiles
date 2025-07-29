@@ -12,6 +12,13 @@ esac
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
+# Language and Japanese
+export GTK_IM_MODULE='fcitx'
+export QT_IM_MODULE='fcitx'
+export SDL_IM_MODULE='fcitx'
+export XMODIFIERS='@im=fcitx'
+
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
