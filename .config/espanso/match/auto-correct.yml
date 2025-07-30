@@ -1280,3 +1280,6 @@ matches:
 - trigger: tr@
   replace: todd.rasband@gmail.com
   word: true
+- trigger: '@online'
+  replace: '@i-dont-trust-you.online'
+  word: true
