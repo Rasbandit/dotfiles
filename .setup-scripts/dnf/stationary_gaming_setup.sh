@@ -3,7 +3,7 @@
 cd /home/rasbandit/Downloads
 
 echo "10.0.20.214:/mnt/user/gaming-desktop-backup    /mnt/backup    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/user/es-de/roms    /home/rasbandit/ES-DE/roms    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/es-de/roms    /home/rasbandit/ES-DE/roms    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
 echo "/home/rasbandit/local_steam   /home/rasbandit/ES-DE/roms/steam    none    bind    0    0" | sudo tee -a /etc/fstab
 
 sudo dnf copr enable lizardbyte/stable -y
