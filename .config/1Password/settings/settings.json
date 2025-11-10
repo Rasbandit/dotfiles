@@ -11,6 +11,8 @@
   "sshAgent.enabled": true,
   "ui.quickAccess.collection": "7FY4CEQNQZE63HHGZR7MGJ3KEM",
   "security.authenticatedUnlock.enabled": true,
+  "passwordGenerator.size.characters": 74,
+  "passwordGenerator.includeSymbols": true,
   "authTags": {
     "app.theme": "n5e8Q7mh1zzRyLARxG0suUr9h4bPhf0+OzrMnAFfRI0",
     "app.useHardwareAcceleration": "YQapRG3PHFnQOFyp+9GnJNKL6FGJHqUj1J3z6oQSDss",
@@ -18,7 +20,7 @@
     "browsers.extension.enabled": "Pa+SIFybHlyQObQ/B4E4vP5q6tZulxrIHulwl1E2Z18",
     "developers.cliSharedLockState.enabled": "K/kbRJUUnCI3sLw6KF7Mt9Pzb/VDpzztzkeNh2UrXGU",
     "passwordGenerator.includeSymbols": "O9Rh3ua/Nab5pJiFL+rPOmPU8pEjpgAbv/kjD5DHIyg",
-    "passwordGenerator.size.characters": "0yyjCTy6k9SKmoAD8YFF9iCxqqXPjXiVp/icjOy1qOQ",
+    "passwordGenerator.size.characters": "4KHcKQPfRcC/R/1hucJrTGAQ3RK864GbD7Hwn0Mf598",
     "security.authenticatedUnlock.enabled": "vHJeTCcUBQ4yttbNtl8M9RmZTtw02oTNnzdXWfr6Eaw",
     "security.authenticatedUnlock.requireAccountPasswordAfter": "eXZDNwUX4dIegqsPnsURerl+qxFKVdwE8tjCBRnssBU",
     "security.autolock.minutes": "U3oEqth7e9wT48uY2zTLLXlvLwHd887m/hMPIfYy8/o",
