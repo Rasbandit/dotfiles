@@ -1,0 +1,114 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 314,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+            },
+            {
+                "type": 1,
+                "code": 305,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Alt_L + KEY_F4",
+        "name": "Quit App",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 314,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+            },
+            {
+                "type": 1,
+                "code": 315,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L + Shift_L + Alt_L + space",
+        "name": "Launch ES-DE",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 314,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+            },
+            {
+                "type": 3,
+                "code": 17,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74",
+                "analog_threshold": -1
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L + Shift_L + Alt_L + i",
+        "name": "music-volume-up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 314,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+            },
+            {
+                "type": 3,
+                "code": 17,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74",
+                "analog_threshold": 1
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L + Alt_L + Shift_L + d",
+        "name": "music-volume-down",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 314,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+            },
+            {
+                "type": 3,
+                "code": 16,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74",
+                "analog_threshold": 1
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Shift_L + Control_L + Alt_L + s",
+        "name": "music-skip",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 314,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+            },
+            {
+                "type": 3,
+                "code": 16,
+                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74",
+                "analog_threshold": -1
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L + Alt_L + Shift_L + p",
+        "name": "music-play-pause",
+        "mapping_type": "key_macro"
+    }
+]

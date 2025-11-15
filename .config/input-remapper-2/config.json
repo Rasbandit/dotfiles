@@ -1,0 +1,6 @@
+{
+    "version": "2.2.0",
+    "autoload": {
+        "Microsoft Xbox Controller": "Xbox_Controller"
+    }
+}
