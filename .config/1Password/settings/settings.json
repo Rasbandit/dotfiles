@@ -13,6 +13,8 @@
   "security.authenticatedUnlock.enabled": true,
   "passwordGenerator.size.characters": 74,
   "passwordGenerator.includeSymbols": true,
+  "developers.cliSharedLockState.enabled": true,
+  "sshAgent.sshAuthorizatonModel": "application",
   "authTags": {
     "app.theme": "n5e8Q7mh1zzRyLARxG0suUr9h4bPhf0+OzrMnAFfRI0",
     "app.useHardwareAcceleration": "YQapRG3PHFnQOFyp+9GnJNKL6FGJHqUj1J3z6oQSDss",
@@ -25,12 +27,12 @@
     "security.authenticatedUnlock.requireAccountPasswordAfter": "eXZDNwUX4dIegqsPnsURerl+qxFKVdwE8tjCBRnssBU",
     "security.autolock.minutes": "U3oEqth7e9wT48uY2zTLLXlvLwHd887m/hMPIfYy8/o",
     "security.autolock.onDeviceLock": "Q/tJWDWOcEVzztzHHpqLmdn5QnjPHdi4TQ1XoL+YGcM",
-    "sshAgent.enabled": "sz0QYYnqqhDWXPzSZnfuWSbV8z5OSK6JyN9J29uojUE",
+    "sshAgent.enabled": "Cj2zxBNGlOVRM4HriVvYmJFH/XP0XMU5jzBjSYubcvk",
     "sshAgent.securityDisclosureOpen": "e+n9yBIw65R+MfZNnbB7KBMIr9JNrIypqjFKeA4ovP8",
-    "sshAgent.sshAuthorizatonModel": "14yq2QgG4/5x/3OvOkd/weKmYmfZ4DMkfp+vxr8JAjs",
+    "sshAgent.sshAuthorizatonModel": "K481y9EoZeHUdfzlOjLqBhLEo++z02XsS6UDvitgT+8",
     "sshAgent.sshSessionDuration": "DxTMUqZfGqtujggJQdoXnjTv1+B//X6UetdNVbmoJ1c",
-    "sshAgent.storeKeyTitles": "DnHKrp7EXtnxf8ukRqNjj4ia0fyy2gYryqL+Mk8ZT+M",
-    "sshAgent.storeSshKeyTitlesResponseGiven": "iUbyPEfMj6+1d1wXtWiD5NiQj2lI8BLzFYOfeLECtpY",
+    "sshAgent.storeKeyTitles": "vbNJ9thSLJ+oFyA/6QkhzPJVyDB5TxmmOMgbNCeldCg",
+    "sshAgent.storeSshKeyTitlesResponseGiven": "AX7sS4ow5+4NURceaTJcCbKcNyyH0MYsrEtVZFaBVyQ",
     "ui.quickAccess.collection": "AddsJGThfPJeF/Wi8U18SAsriNVh+/eyL5QJq/4ZHVY"
   }
 }
