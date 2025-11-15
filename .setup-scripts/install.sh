@@ -21,7 +21,7 @@ if [ $OS = "fedora" ]; then
     ~/.setup-scripts/operating-systems/fedora-setup.sh
 fi
 
-script_path="/home/${USER}/.setup-scripts/cron-jobs/auto-add-push.sh"
+script_path="/home/${USER}/.setup-scripts/scripts/auto-add-push.sh"
 cron_job="0 */1 * * * $script_path"
 echo "$cron_job" > /tmp/cron_job
 crontab /tmp/cron_job
