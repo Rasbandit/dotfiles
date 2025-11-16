@@ -9,10 +9,6 @@
   "sshAgent.storeKeyTitles": true,
   "sshAgent.storeSshKeyTitlesResponseGiven": true,
   "sshAgent.enabled": true,
-  "ui.quickAccess.collection": "7FY4CEQNQZE63HHGZR7MGJ3KEM",
-  "security.authenticatedUnlock.enabled": true,
-  "passwordGenerator.size.characters": 74,
-  "passwordGenerator.includeSymbols": true,
   "developers.cliSharedLockState.enabled": true,
   "sshAgent.sshAuthorizatonModel": "application",
   "authTags": {
