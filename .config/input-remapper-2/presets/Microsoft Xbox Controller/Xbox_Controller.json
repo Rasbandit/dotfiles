@@ -31,7 +31,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Control_L + Shift_L + Alt_L + space",
+        "output_symbol": "Control_L + Shift_L + Alt_L + Super_L + space",
         "name": "Launch ES-DE",
         "mapping_type": "key_macro"
     },
@@ -40,17 +40,54 @@
             {
                 "type": 1,
                 "code": 314,
-                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9"
             },
             {
-                "type": 3,
-                "code": 17,
-                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74",
-                "analog_threshold": -1
+                "type": 1,
+                "code": 318,
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9"
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Control_L + Shift_L + Alt_L + i",
+        "output_symbol": "Control_L + Alt_L + Shift_L + Super_L + p",
+        "name": "music-play-pause",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 314,
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9"
+            },
+            {
+                "type": 3,
+                "code": 3,
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9",
+                "analog_threshold": 70
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Shift_L + Control_L + Alt_L + Super_L + s",
+        "name": "music-next-song",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 314,
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9"
+            },
+            {
+                "type": 3,
+                "code": 4,
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9",
+                "analog_threshold": -80
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L + Shift_L + Alt_L + Super_L + i",
         "name": "music-volume-up",
         "mapping_type": "key_macro"
     },
@@ -59,17 +96,17 @@
             {
                 "type": 1,
                 "code": 314,
-                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9"
             },
             {
                 "type": 3,
-                "code": 17,
-                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74",
-                "analog_threshold": 1
+                "code": 4,
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9",
+                "analog_threshold": 80
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Control_L + Alt_L + Shift_L + d",
+        "output_symbol": "Control_L + Shift_L + Alt_L + Super_L + d",
         "name": "music-volume-down",
         "mapping_type": "key_macro"
     },
@@ -78,37 +115,17 @@
             {
                 "type": 1,
                 "code": 314,
-                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9"
             },
             {
                 "type": 3,
-                "code": 16,
-                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74",
-                "analog_threshold": 1
+                "code": 3,
+                "origin_hash": "bd947e359c04f76008fa811dcacb68b9"
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Shift_L + Control_L + Alt_L + s",
-        "name": "music-skip",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 314,
-                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74"
-            },
-            {
-                "type": 3,
-                "code": 16,
-                "origin_hash": "d7565d8c36b0ee8fc278d09faa344b74",
-                "analog_threshold": -1
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Control_L + Alt_L + Shift_L + p",
-        "name": "music-play-pause",
+        "output_symbol": "Shift_L + Control_L + Alt_L + Super_L + y",
+        "name": "music-previous-song",
         "mapping_type": "key_macro"
     }
 ]

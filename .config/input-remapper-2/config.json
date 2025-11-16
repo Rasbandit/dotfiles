@@ -1,6 +1,7 @@
 {
     "version": "2.2.0",
     "autoload": {
-        "Microsoft Xbox Controller": "Xbox_Controller"
+        "Microsoft Xbox Controller": "Xbox_Controller",
+        "Microsoft X-Box 360 pad": "Xbox_Controller"
     }
 }
