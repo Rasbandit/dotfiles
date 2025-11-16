@@ -1,10 +1,6 @@
 {
     "version": "2.2.0",
     "autoload": {
-        "Microsoft Xbox Controller": "Xbox_Controller",
-        "Microsoft X-Box 360 pad": "Xbox_Controller",
-        "Microsoft Xbox Controller 4": "Xbox_Controller",
-        "Microsoft Xbox Controller 2": "Xbox_Controller",
-        "Microsoft Xbox Controller 3": "Xbox_Controller"
+        "Microsoft X-Box 360 pad": "Xbox_Controller"
     }
 }
