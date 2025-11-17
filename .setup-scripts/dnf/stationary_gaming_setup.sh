@@ -13,6 +13,7 @@ echo "/home/rasbandit/Documents/local_steam   /home/rasbandit/ES-DE/roms/steam  
 echo "10.0.20.214:/mnt/cache/retroarch/desktop /home/rasbandit/.config/retroarch nfs4 rw,hard,intr,noatime,_netdev 0 0" | sudo tee -a /etc/fstab
 echo "10.0.20.214:/mnt/cache/retroarch/shared/saves    /home/rasbandit/.config/retroarch/saves    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
 echo "10.0.20.214:/mnt/cache/retroarch/shared/states    /home/rasbandit/.config/retroarch/states    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/retroarch/shared/remaps    /home/rasbandit/.config/retroarch/config/remaps    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
 
 #Dolphin
 echo "10.0.20.214:/mnt/cache/dolphin/desktop/GameSettings    /home/rasbandit/.local/share/dolphin-emu/GameSettings    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
