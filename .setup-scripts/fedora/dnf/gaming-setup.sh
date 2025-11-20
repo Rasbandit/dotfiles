@@ -46,3 +46,5 @@ add_custom_keybinding "music-next-track" "/home/${USER}/.setup-scripts/scripts/s
 add_custom_keybinding "music-previous-track" "/home/${USER}/.setup-scripts/scripts/spotify-controll.sh previous" "<Control><Shift><Alt><Super>y"
 add_custom_keybinding "msuic-volume-down" "/home/${USER}/.setup-scripts/scripts/spotify-controll.sh -" "<Control><Shift><Alt><Super>d"
 add_custom_keybinding "music-volume-up" "/home/${USER}/.setup-scripts/scripts/spotify-controll.sh +" "<Control><Shift><Alt><Super>i"
+
+~/.setup-scripts/other-installs/es-de.sh

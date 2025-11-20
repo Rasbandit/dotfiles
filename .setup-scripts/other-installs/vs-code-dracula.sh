@@ -1,9 +1,9 @@
 #!/bin/bash
 
-curl -L -o ~/Downloads/dracula-pro.vsix "https://nextcloud.ras.band/public.php/dav/files/gaBCyX3XeTbBKyF/?accept=zip"
-# unzip ~/Downloads/vs-code-dracula-theme.zip -d ~/Downloads
+VS_CODE_EXT="/home/${USER}/Downloads/dracula-pro.vsix"
 
-code --install-extension ~/Downloads/dracula-pro.vsix
+curl -L -o "${VS_CODE_EXT}" "https://nextcloud.ras.band/public.php/dav/files/gaBCyX3XeTbBKyF/?accept=zip"
 
-# rm ~/Downloads/vs-code-dracula-theme.zip
-# rm -r ~/Downloads/visual-studio-code
+code --install-extension "${VS_CODE_EXT}"
+
+rm "${VS_CODE_EXT}"
