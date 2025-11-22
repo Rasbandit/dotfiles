@@ -33,6 +33,7 @@ sudo flatpak install org.gnome.World.PikaBackup -y
 ~/.setup-scripts/scripts/autostart-link.sh link steam.desktop
 
 ~/.setup-scripts/other-installs/es-de.sh
+~/.setup-scripts/other-installs/evmap.sh
 ~/.setup-scripts/fedora/dnf/specific-apps/xbox-dongle.sh
 ~/.setup-scripts/fedora/dnf/specific-apps/xpad-noone.sh
 
