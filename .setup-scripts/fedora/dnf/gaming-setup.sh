@@ -18,13 +18,10 @@ xdotool \
 gamescope \
 goverlay \
 lutris \
-input-remapper \
 wmctrl \
 playerctl
 
 sudo dnf upgrade --refresh -y
-
-sudo systemctl enable --now input-remapper
 
 #Proton
 flatpak install flathub net.davidotek.pupgui2 -y
@@ -34,14 +31,6 @@ sudo flatpak install org.gnome.World.PikaBackup -y
 #Auto Starts
 ~/.setup-scripts/scripts/autostart-link.sh link es-de.desktop
 ~/.setup-scripts/scripts/autostart-link.sh link steam.desktop
-
-#Global Keyboard shortcuts
-add_custom_keybinding "focus es-de" "${HOME}/.setup-scripts/scripts/focus_es-de.sh" "<Control><Shift><Alt><Super>space"
-add_custom_keybinding "launch-spotify" "${HOME}/.setup-scripts/scripts/spotify-controll.sh" "<Control><Shift><Alt><Super>p"
-add_custom_keybinding "music-next-track" "${HOME}/.setup-scripts/scripts/spotify-controll.sh next" "<Control><Shift><Alt><Super>s"
-add_custom_keybinding "music-previous-track" "${HOME}/.setup-scripts/scripts/spotify-controll.sh previous" "<Control><Shift><Alt><Super>y"
-add_custom_keybinding "msuic-volume-down" "${HOME}/.setup-scripts/scripts/spotify-controll.sh -" "<Control><Shift><Alt><Super>d"
-add_custom_keybinding "music-volume-up" "${HOME}/.setup-scripts/scripts/spotify-controll.sh +" "<Control><Shift><Alt><Super>i"
 
 ~/.setup-scripts/other-installs/es-de.sh
 ~/.setup-scripts/fedora/dnf/specific-apps/xbox-dongle.sh

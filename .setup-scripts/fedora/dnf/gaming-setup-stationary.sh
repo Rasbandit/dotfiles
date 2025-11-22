@@ -4,6 +4,7 @@
 ~/.setup-scripts/scripts/autostart-link.sh link sol.desktop
 ~/.setup-scripts/scripts/autostart-link.sh link discord.desktop
 ~/.setup-scripts/scripts/autostart-link.sh link sunshine.desktop
+~/.setup-scripts/scripts/autostart-link.sh link evmapy.desktop
 
 # NAS Mounts
 echo "# ES-DE Mounts" | sudo tee -a /etc/fstab
