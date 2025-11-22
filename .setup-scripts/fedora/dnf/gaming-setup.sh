@@ -24,18 +24,21 @@ playerctl
 sudo dnf upgrade --refresh -y
 
 #Proton
-flatpak install flathub net.davidotek.pupgui2 -y
-flatpak install flathub com.vysp3r.ProtonPlus -y
+sudo latpak install flathub net.davidotek.pupgui2 -y
+sudo flatpak install flathub com.vysp3r.ProtonPlus -y
 sudo flatpak install org.gnome.World.PikaBackup -y
 
 #Auto Starts
 ~/.setup-scripts/scripts/autostart-link.sh link es-de.desktop
 ~/.setup-scripts/scripts/autostart-link.sh link steam.desktop
+~/.setup-scripts/scripts/autostart-link.sh link evmapy.desktop
 
 ~/.setup-scripts/other-installs/es-de.sh
 ~/.setup-scripts/other-installs/evmap.sh
+~/.setup-scripts/other-installs/ryujinx.sh
 ~/.setup-scripts/fedora/dnf/specific-apps/xbox-dongle.sh
 ~/.setup-scripts/fedora/dnf/specific-apps/xpad-noone.sh
+
 
 
 mkdir -p "${HOME}/Documents/local_steam"
