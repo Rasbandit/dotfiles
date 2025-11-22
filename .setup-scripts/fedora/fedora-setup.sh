@@ -64,7 +64,7 @@ if command -v ghostty >/dev/null 2>&1; then
     sudo dnf remove ptyxis -y
 fi
 
-~/.setup-scripts/autostart-link.sh 1password.desktop
+~/.setup-scripts/scripts/autostart-link.sh link 1password.desktop
 
 echo "We are currently installing a fedora system. Please choose an installation type:"
 echo "Choose an installation type:"
