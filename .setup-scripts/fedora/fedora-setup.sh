@@ -65,3 +65,26 @@ if command -v ghostty >/dev/null 2>&1; then
 fi
 
 ~/.setup-scripts/autostart-link.sh 1password.desktop
+
+echo "We are currently installing a fedora system. Please choose an installation type:"
+echo "Choose an installation type:"
+echo "1) Gaming Setup"
+echo "2) Personal Laptop"
+echo ""
+
+read -p "Enter your choice (1 or 2): " choice
+
+case $choice in
+    1)
+        echo "Running Gaming Setup installation..."
+        ~/.setup-scripts/fedora/dnf/gaming-setup.sh
+        ;;
+    2)
+        echo "Running Personal Laptop installation..."
+        ~/.setup-scripts/fedora/dnf/laptop-install.sh
+        ;;
+    *)
+        echo "Invalid choice. Please run the script again and select 1 or 2."
+        exit 1
+        ;;
+esac
