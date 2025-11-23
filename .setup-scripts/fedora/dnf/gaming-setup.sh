@@ -10,9 +10,7 @@ sudo dnf upgrade --refresh -y
 sudo dnf install --skip-broken -y \
 timeshift \
 seahorse \
-dolphin-emu \
 steam \
-retroarch \
 Sunshine \
 xdotool \
 gamescope \
@@ -27,6 +25,8 @@ sudo dnf upgrade --refresh -y
 sudo latpak install flathub net.davidotek.pupgui2 -y
 sudo flatpak install flathub com.vysp3r.ProtonPlus -y
 sudo flatpak install org.gnome.World.PikaBackup -y
+sudo flatpak install flathub org.DolphinEmu.dolphin-emu -y
+sudo flatpak install flathub org.libretro.RetroArch -y
 
 #Auto Starts
 ~/.setup-scripts/scripts/autostart-link.sh link es-de.desktop

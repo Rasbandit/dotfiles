@@ -12,22 +12,22 @@ echo "10.0.20.214:/mnt/cache/ES-DE    /home/${USER}/ES-DE    nfs4    rw,hard,int
 
 
 # Retroarch
-mkdir -p /home/${USER}/.config/retroarch/{saves,states,config/remaps}
+mkdir -p /home/${USER}/.var/app/org.libretro.RetroArch/config/retroarch/{saves,states,config/remaps}
 echo "# Retroarch Mounts" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/cache/emulators/retroarch/desktop /home/${USER}/.config/retroarch nfs4 rw,hard,intr,noatime,_netdev 0 0" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/cache/emulators/retroarch/shared/saves    /home/${USER}/.config/retroarch/saves    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/cache/emulators/retroarch/shared/states    /home/${USER}/.config/retroarch/states    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/cache/emulators/retroarch/shared/remaps    /home/${USER}/.config/retroarch/config/remaps    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/retroarch/desktop /home/${USER}/.var/app/org.libretro.RetroArch/config/retroarch nfs4 rw,hard,intr,noatime,_netdev 0 0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/retroarch/shared/saves    /home/${USER}/.var/app/org.libretro.RetroArch/config/retroarch/saves    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/retroarch/shared/states    /home/${USER}/.var/app/org.libretro.RetroArch/config/retroarch/states    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/retroarch/shared/remaps    /home/${USER}/.var/app/org.libretro.RetroArch/config/retroarch/config/remaps    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
 
 # Dolphin
 mkdir -p /home/${USER}/.local/share/dolphin-emu/{GC,Wii,StateSaves}
 mkdir -p /home/${USER}/.config/dolphin-emu
 echo "# Dolphin Mounts" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/cache/emulators/dolphin/desktop/share    /home/${USER}/.local/share/dolphin-emu    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/cache/emulators/dolphin/desktop/config    /home/${USER}/.config/dolphin-emu    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/cache/emulators/dolphin/shared/GC    /home/${USER}/.local/share/dolphin-emu/GC    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/cache/emulators/dolphin/shared/Wii    /home/${USER}/.local/share/dolphin-emu/Wii    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
-echo "10.0.20.214:/mnt/cache/emulators/dolphin/shared/StateSaves    /home/${USER}/.local/share/dolphin-emu/StateSaves    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/dolphin/desktop/share    /home/${USER}/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/dolphin/desktop/config    /home/${USER}/.var/app/org.DolphinEmu.dolphin-emu/config/dolphin-emu    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/dolphin/shared/GC    /home/${USER}/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/GC    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/dolphin/shared/Wii    /home/${USER}/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/Wii    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/dolphin/shared/StateSaves    /home/${USER}/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/StateSaves    nfs4    rw,hard,intr,noatime,_netdev    0    0" | sudo tee -a /etc/fstab
 
 # Ryujinx
 mkdir -p /home/${USER}/.config/Ryujinx
