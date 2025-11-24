@@ -40,6 +40,8 @@ langpacks-core-font-ja \
 flatpak \
 dnf-plugin-system-upgrade
 
+touch ${HOME}/.cargo/env
+
 curl -fsSL https://tailscale.com/install.sh | sh
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo

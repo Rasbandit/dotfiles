@@ -39,8 +39,6 @@ sudo flatpak install flathub org.libretro.RetroArch -y
 ~/.setup-scripts/fedora/dnf/specific-apps/xbox-dongle.sh
 ~/.setup-scripts/fedora/dnf/specific-apps/xpad-noone.sh
 
-
-
 mkdir -p "${HOME}/Documents/local_steam"
 echo "${HOME}/Documents/local_steam   ${HOME}/ES-DE/roms/steam    none    bind,nofail    0   0" | sudo tee -a /etc/fstab
 
