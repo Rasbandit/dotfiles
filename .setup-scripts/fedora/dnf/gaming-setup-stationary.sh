@@ -38,6 +38,7 @@ echo "10.0.20.214:/mnt/cache/emulators/ryujinx ${HOME}/.config/ryujinx nfs4 rw,h
 mkdir -p ${HOME}/.local/share/sm64ex
 echo "# Other Mounts" | sudo tee -a /etc/fstab
 echo "10.0.20.214:/mnt/cache/emulators/ports/mario-64-pc ${HOME}/.local/share/sm64ex nfs4 rw,hard,intr,noatime,_netdev 0 0" | sudo tee -a /etc/fstab
+echo "10.0.20.214:/mnt/cache/emulators/xemu ${HOME}/.var/app/app.xemu.xemu/data/xemu/xemu nfs4 rw,hard,intr,noatime,_netdev 0 0" | sudo tee -a /etc/fstab
 
 systemctl daemon-reload
 sudo mount -a
