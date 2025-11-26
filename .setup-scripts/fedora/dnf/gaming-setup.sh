@@ -27,6 +27,7 @@ sudo flatpak install flathub com.vysp3r.ProtonPlus -y
 sudo flatpak install org.gnome.World.PikaBackup -y
 sudo flatpak install flathub org.DolphinEmu.dolphin-emu -y
 sudo flatpak install flathub org.libretro.RetroArch -y
+sudo flatpak install app.xemu.xemu -y
 
 # Udev to ignore keycrhon
 echo 'KERNEL=="event*", SUBSYSTEM=="input", ENV{ID_VENDOR_ID}=="3434", ENV{ID_INPUT_JOYSTICK}=="*?", ENV{ID_INPUT_JOYSTICK}="""' | sudo tee /etc/udev/rules.d/99-keychron-no-joysticks.rules >/dev/null 
