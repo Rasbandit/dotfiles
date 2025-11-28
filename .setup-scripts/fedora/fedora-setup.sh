@@ -42,8 +42,6 @@ dnf-plugin-system-upgrade
 
 touch ${HOME}/.cargo/env
 
-curl -fsSL https://tailscale.com/install.sh | sh
-
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
@@ -57,6 +55,8 @@ flatpak install flathub com.spotify.Client -y
 ~/.setup-scripts/fedora/dnf/specific-apps/steam.sh
 ~/.setup-scripts/fedora/dnf/specific-apps/eza.sh
 ~/.setup-scripts/fedora/dnf/specific-apps/yq.sh
+~/.setup-scripts/fedora/dnf/specific-apps/yq.sh
+~/.setup-scripts/fedora/dnf/specific-apps/tailscale.sh
 
 ~/.setup-scripts/fedora/dnf/specific-apps/vscode.sh
 ~/.setup-scripts/other-installs/vs-code-dracula.sh

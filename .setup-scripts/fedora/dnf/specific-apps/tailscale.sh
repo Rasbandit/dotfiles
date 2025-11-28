@@ -4,3 +4,4 @@ sudo dnf config-manager addrepo --from-repofile=https://pkgs.tailscale.com/stabl
 sudo dnf install tailscale
 
 sudo systemctl enable --now tailscaled
+#!/bin/bash
