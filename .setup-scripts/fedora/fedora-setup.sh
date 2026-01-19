@@ -42,6 +42,8 @@ dnf-plugin-system-upgrade \
 vlc \
 obs-vkcapture
 
+sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld -y
+
 touch ${HOME}/.cargo/env
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
