@@ -38,7 +38,9 @@ iotop \
 dog \
 langpacks-core-font-ja \
 flatpak \
-dnf-plugin-system-upgrade
+dnf-plugin-system-upgrade \
+vlc \
+obs-vkcapture
 
 touch ${HOME}/.cargo/env
 
@@ -48,6 +50,9 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub com.spotify.Client -y
+flatpak install flathub com.obsproject.Studio -y
+flatpak install flathub com.obsproject.Studio -y
+flatpak install flathub org.kde.kdenlive -y
 
 ~/.setup-scripts/fedora/dnf/specific-apps/1pass.sh
 ~/.setup-scripts/fedora/dnf/specific-apps/vivaldi.sh
