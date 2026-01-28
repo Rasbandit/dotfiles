@@ -4,8 +4,12 @@ set -ex
 
 echo "fastestmirror=true" | sudo tee -a /etc/dnf/dnf.conf
 echo "max_parallel_downloads=20" | sudo tee -a /etc/dnf/dnf.conf
-echo "installonly_limit=10" | sudo tee -a /etc/dnf/dnf.conf
+echo "installonly_limit=3" | sudo tee -a /etc/dnf/dnf.conf
 echo "deltarpm=true" | sudo tee -a /etc/dnf/dnf.conf
+echo "metadata_expire=24h" | sudo tee -a /etc/dnf/dnf.conf
+echo "zchunk=true" | sudo tee -a /etc/dnf/dnf.conf
+echo "minrate=5000" | sudo tee -a /etc/dnf/dnf.conf
+echo "retries=10" | sudo tee -a /etc/dnf/dnf.conf
 
 sudo dnf update -y
 
