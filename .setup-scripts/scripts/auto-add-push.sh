@@ -17,8 +17,18 @@ LOCAL_BRANCH="main"
 config remote set-url origin https://github.com/Rasbandit/dotfiles.git
 config remote set-url --push origin git@github.com:Rasbandit/dotfiles.git
 
-# --- 1. Pull remote changes first (will not prompt for SSH unlock if repo is public) ---
-config pull
+# --- 1. Stage your dotfiles and config changes first (before pulling) ---
+config add "$HOME/.setup-scripts/"* "$HOME/.config/autostart-potentials/"*
+config add -u
+
+# --- 2. Commit if needed (do this before pulling to avoid conflicts) ---
+if [ -n "$(config diff --cached --name-only)" ]; then
+    timestamp=$(date +"%Y-%m-%d %H:%M")
+    config commit -m "$timestamp"
+    echo "Committed local changes."
+fi
+
+# --- 3. Pull remote changes (now that working tree is clean) ---
 config fetch origin +refs/heads/*:refs/remotes/origin/*
 
 LOCAL_COMMIT=$(config rev-parse "$LOCAL_BRANCH")
@@ -38,16 +48,10 @@ else
     exit 1
 fi
 
-# --- 2. Stage your dotfiles and config changes ---
-config add "$HOME/.setup-scripts/"* "$HOME/.config/autostart-potentials/"*
-config add -u
-
-# --- 3. Commit if needed, then push (this will require SSH key unlock if needed) ---
-if [ -n "$(config diff --cached --name-only)" ]; then
-    timestamp=$(date +"%Y-%m-%d %H:%M")
-    config commit -m "$timestamp"
+# --- 4. Push if there are new commits (this will require SSH key unlock if needed) ---
+if [ -n "$(config diff "$LOCAL_BRANCH" "$REMOTE_BRANCH")" ] || [ "$(config rev-parse "$LOCAL_BRANCH")" != "$(config rev-parse "$REMOTE_BRANCH")" ]; then
     echo "Pushing new commit to remote main (this will require your SSH key)..."
     config push
 else
-    echo "No local changes to commit or push."
+    echo "No changes to push."
 fi

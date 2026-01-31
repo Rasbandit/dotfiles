@@ -48,7 +48,7 @@ alias k='kubectl'
 # Dotfiles repo
 alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
 alias config_push_changes='~/.setup-scripts/scripts/auto-add-push.sh'
-alias drd_cam='~/.setup-scripts/dnf/droidcam.sh'
+alias drd_cam='~/.setup-scripts/dnf/specific-apps/droidcam.sh'
 alias asl="~/.setup-scripts/autostart-link.sh"
 
 # NPM

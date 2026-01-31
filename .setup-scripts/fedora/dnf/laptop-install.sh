@@ -3,6 +3,7 @@
 flatpak install flathub com.todoist.Todoist -y
 flatpak install flathub org.videolan.VLC -y
 flatpak install flathub org.signal.Signal -y
+flatpak install --user flathub com.slack.Slack -y
 
 ~/.setup-scripts/other-installs/droidcam.sh
 ~/.setup-scripts/dnf/specific-apps/lazy-docker.sh

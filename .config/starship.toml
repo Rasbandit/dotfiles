@@ -1,6 +1,5 @@
-format = """ 
-[](fg:4)\
-[$os](bg:4 fg:0)\
+format = """
+[ $os](bg:4 fg:0)\
 [](bg:12 fg:4)\
 $directory\
 [](fg:12 bg:13)\

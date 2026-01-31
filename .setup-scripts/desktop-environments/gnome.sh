@@ -10,7 +10,7 @@ blur-my-shell@aunetx \
 quick-settings-tweaks@qwreey \
 caffeine@patapon.info
 
-sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
+# sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/quick-settings-tweaks@qwreey/schemas/org.gnome.shell.extensions.quick-settings-tweaks.gschema.xml /usr/share/glib-2.0/schemas/
 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
@@ -18,10 +18,10 @@ sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 
 # Blur my shell
-gsettings set org.gnome.shell.extensions.blur-my-shell sigma 10
-gsettings set org.gnome.shell.extensions.blur-my-shell brightness 0.7
-gsettings set org.gnome.shell.extensions.blur-my-shell color "(0.0, 0.0, 0.0, 0.0)"
-gsettings set org.gnome.shell.extensions.blur-my-shell noise-amount 0.02
+# gsettings set org.gnome.shell.extensions.blur-my-shell sigma 10
+# gsettings set org.gnome.shell.extensions.blur-my-shell brightness 0.7
+# gsettings set org.gnome.shell.extensions.blur-my-shell color "(0.0, 0.0, 0.0, 0.0)"
+# gsettings set org.gnome.shell.extensions.blur-my-shell noise-amount 0.02
 
 
 # Quick Settings Tweaks
@@ -106,5 +106,19 @@ gsettings set org.gnome.desktop.interface monospace-font-name 'MonoLisa Nerd Fon
 gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Software.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Contacts.desktop']"
 
 
+<<<<<<< HEAD
 add_custom_keybinding "1pass Quick" "1password --quick-access" "<Control><Shift>space"
 add_custom_keybinding "1pass" "1password" "<Control><Shift>backslash"
+=======
+
+add_custom_keybinding "1pass Quick" "1password --quick-access" "<Control><Shift><Alt>space"
+add_custom_keybinding "1pass" "/home/${USER}/.setup-scripts/scripts/focus-or-run.sh 1Password 1password" "<Control><Shift><Alt>1"
+add_custom_keybinding "Vivaldi" "/home/${USER}/.setup-scripts/scripts/focus-or-run.sh Vivaldi vivaldi" "<Control><Shift><Alt>v"
+add_custom_keybinding "Spotify" "/home/${USER}/.setup-scripts/scripts/focus-or-run.sh spotify" "<Control><Shift><Alt>s"
+add_custom_keybinding "Ghostty" "/home/${USER}/.setup-scripts/scripts/focus-or-run.sh com.mitchellh.ghostty ghostty" "<Control><Shift><Alt>t"
+add_custom_keybinding "VSCode" "/home/${USER}/.setup-scripts/scripts/focus-or-run.sh Code code" "<Control><Shift><Alt>c"
+add_custom_keybinding "Discord" "/home/${USER}/.setup-scripts/scripts/focus-or-run.sh discord 'flatpak run com.discordapp.Discord'" "<Control><Shift><Alt>d"
+add_custom_keybinding "Obsidian" "/home/${USER}/.setup-scripts/scripts/focus-or-run.sh obsidian 'flatpak run md.obsidian.Obsidian'" "<Control><Shift><Alt>q"
+add_custom_keybinding "Slack" "/home/${USER}/.setup-scripts/scripts/focus-or-run.sh Slack slack" "<Control><Shift><Alt>s"
+add_custom_keybinding "Emoji" "flatpak run com.tomjwatson.Emote" "<Control><Shift><Alt>semicolon"
+>>>>>>> 6e5c7f3 (2026-01-31 14:46)
