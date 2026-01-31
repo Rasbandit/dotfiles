@@ -38,14 +38,21 @@ BASE_COMMIT=$(config merge-base "$LOCAL_BRANCH" "$REMOTE_BRANCH")
 if [ "$LOCAL_COMMIT" = "$REMOTE_COMMIT" ]; then
     echo "Local and remote are up to date."
 elif [ "$LOCAL_COMMIT" = "$BASE_COMMIT" ]; then
-    echo "Pulling new changes from remote main (no SSH key required)..."
-    config pull --ff-only "$REMOTE_BRANCH"
+    echo "Pulling and rebasing new changes from remote main..."
+    if ! config pull --rebase "$REMOTE_BRANCH"; then
+        notify-send "Dotfiles backup ERROR" "Rebase failed due to conflicts! Resolve manually with 'config rebase --continue' or 'config rebase --abort'."
+        echo "Rebase failed due to conflicts! Resolve manually."
+        exit 1
+    fi
 elif [ "$REMOTE_COMMIT" = "$BASE_COMMIT" ]; then
     echo "Local ahead; will push any new commits after staging."
 else
-    notify-send "Dotfiles backup ERROR" "Branches have diverged! Manual intervention required."
-    echo "Branches have diverged! Manual intervention required."
-    exit 1
+    echo "Branches have diverged! Attempting rebase..."
+    if ! config rebase "$REMOTE_BRANCH"; then
+        notify-send "Dotfiles backup ERROR" "Rebase failed due to conflicts! Resolve manually with 'config rebase --continue' or 'config rebase --abort'."
+        echo "Rebase failed due to conflicts! Resolve manually."
+        exit 1
+    fi
 fi
 
 # --- 4. Push if there are new commits (this will require SSH key unlock if needed) ---
